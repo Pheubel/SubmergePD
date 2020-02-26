@@ -412,8 +412,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-PDVR/Library/ArtifactDB
-PDVR/Library/EditorInstance.json
-PDVR/Library/SourceAssetDB
-PDVR/Temp/UnityLockfile
-PDVR/Library/CurrentLayout-default.dwlt
+
+PDVR/Library/*
+PDVR/Temp/*
