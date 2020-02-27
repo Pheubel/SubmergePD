@@ -10,6 +10,7 @@ namespace Valve.VR.Extras
 
         //public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.__actions_default_in_InteractUI;
         public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
+        public SteamVR_Action_Boolean squeeze = null;
 
         public bool active = true;
         public Color color;
@@ -23,6 +24,8 @@ namespace Valve.VR.Extras
         public event PointerEventHandler PointerIn;
         public event PointerEventHandler PointerOut;
         public event PointerEventHandler PointerClick;
+        public event PointerEventHandler PointerSqueeze;
+        public event PointerEventHandler PointerRelease;
 
         Transform previousContact = null;
 
@@ -88,6 +91,12 @@ namespace Valve.VR.Extras
                 PointerOut(this, e);
         }
 
+        public virtual void OnPointerSqueeze(PointerEventArgs e)
+        {
+            if (PointerSqueeze != null)
+                PointerSqueeze(this, e);
+        }
+
 
         private void Update()
         {
@@ -140,6 +149,11 @@ namespace Valve.VR.Extras
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
+            }
+
+            if (squeeze.GetStateDown(pose.inputSource))
+            {
+                print("it went down");
             }
 
             if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))

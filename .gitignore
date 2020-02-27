@@ -415,3 +415,6 @@ crashlytics-build.properties
 
 PDVR/Library/*
 PDVR/Temp/*
+
+!PDVR/Assets/*.meta
+!PDVR/Assets/**/*.meta
