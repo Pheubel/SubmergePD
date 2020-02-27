@@ -10,7 +10,7 @@ namespace Valve.VR.Extras
 
         //public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.__actions_default_in_InteractUI;
         public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
-        public SteamVR_Action_Boolean squeeze = SteamVR_Input.GetBooleanAction("queeze");
+        public SteamVR_Action_Boolean squeeze = null;
 
         public bool active = true;
         public Color color;
