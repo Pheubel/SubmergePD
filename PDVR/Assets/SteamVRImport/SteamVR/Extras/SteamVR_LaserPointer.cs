@@ -152,6 +152,7 @@ namespace Valve.VR.Extras
                 PointerEventArgs argsClick = new PointerEventArgs();
                 argsClick.fromInputSource = pose.inputSource;
                 argsClick.distance = hit.distance;
+                argsClick.position = hit.point;
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
@@ -163,6 +164,7 @@ namespace Valve.VR.Extras
                 PointerEventArgs argsSqueeze = new PointerEventArgs();
                 argsSqueeze.fromInputSource = pose.inputSource;
                 argsSqueeze.distance = hit.distance;
+                argsSqueeze.position = hit.point;
                 argsSqueeze.flags = 0;
                 argsSqueeze.target = hit.transform;
                 OnPointerSqueeze(argsSqueeze);
@@ -174,6 +176,7 @@ namespace Valve.VR.Extras
                 PointerEventArgs argsRelease = new PointerEventArgs();
                 argsRelease.fromInputSource = pose.inputSource;
                 argsRelease.distance = hit.distance;
+                argsRelease.position = hit.point;
                 argsRelease.flags = 0;
                 argsRelease.target = hit.transform;
                 OnPointerRelease(argsRelease);
@@ -199,6 +202,7 @@ namespace Valve.VR.Extras
         public uint flags;
         public float distance;
         public Transform target;
+        public Vector3 position;
     }
 
     public delegate void PointerEventHandler(object sender, PointerEventArgs e);

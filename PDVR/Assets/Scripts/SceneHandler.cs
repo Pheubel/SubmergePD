@@ -30,7 +30,11 @@ public class SceneHandler : MonoBehaviour
             return;
 
         print(e.target.position);
-        line.SetPosition(0, e.target.position);
+
+        var index = line.positionCount++;
+
+        line.SetPosition(index, e.position);
+        //line.SetPosition(0, e.target.position);
 
     }
 
@@ -39,13 +43,13 @@ public class SceneHandler : MonoBehaviour
         if (e.target == null)
             return;
 
-        MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
+        Renderer meshRenderer = e.target.GetComponent<Renderer>();
         meshRenderer.material.color = enterColor;
     }
 
     public void PointerOutside(object sender, PointerEventArgs e)
     {
-        MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
+        Renderer meshRenderer = e.target.GetComponent<Renderer>();
         meshRenderer.material.color = normalColor;
     }
 
@@ -53,8 +57,8 @@ public class SceneHandler : MonoBehaviour
     {
         if (e.target == null)
             return;
-        print(e.target.position);
-        line.SetPosition(1, e.target.position);
+        print(e.position);
+        //line.SetPosition(1, e.target.position);
 
     }
 }
