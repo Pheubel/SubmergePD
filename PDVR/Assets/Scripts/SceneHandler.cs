@@ -43,8 +43,8 @@ public class SceneHandler : MonoBehaviour
         if (e.target == null)
             return;
 
-        Renderer meshRenderer = e.target.GetComponent<Renderer>();
-        meshRenderer.material.color = enterColor;
+        if (e.target.TryGetComponent<Renderer>(out var renderer))
+            renderer.material.color = enterColor;
     }
 
     public void PointerOutside(object sender, PointerEventArgs e)

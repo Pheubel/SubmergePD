@@ -109,7 +109,7 @@ public class RadialMenu : MonoBehaviour
 
     public void ActivateHighlightedSection()
     {
-        highlightedSection.onPress.Invoke();
+        highlightedSection?.onPress?.Invoke();
     }
 
     public void SetTouchPosition(Vector2 newValue)
