@@ -17,6 +17,12 @@ public class AudioSourceController : MonoBehaviour
 
     public void PlayAudio(float point = 0f)
     {
+        if (_audioSource.clip == null)
+        {
+            Debug.LogError($"No audio clip located in {name}'s audio source.");
+            return;
+        }
+
         if (point < 0f || point >= 1f)
         {
             Debug.LogWarning($"expected a value between 0 and 1");
