@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 6953055439935451813}
   - component: {fileID: 5866124235131398615}
   - component: {fileID: 844613752449626134}
-  - component: {fileID: 414375205811647803}
-  - component: {fileID: 3173489315290616288}
   - component: {fileID: 8748626283300860574}
   - component: {fileID: 6610638456373053326}
+  - component: {fileID: 680824257440347710}
+  - component: {fileID: 8528407746345334165}
   m_Layer: 0
   m_Name: AudioBubble
   m_TagString: Untagged
@@ -211,31 +211,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &414375205811647803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135742299174292419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd6a9d0c6ce023419532ade034c4407, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3173489315290616288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3135742299174292419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c7241b44dd7cff429a7b40332f429d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _resetDelay: 1
 --- !u!114 &8748626283300860574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,11 +220,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 3135742299174292419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d200073bc715c344eafb08edf34a4f96, type: 3}
+  m_Script: {fileID: 11500000, guid: c7cfc8c4e23b3854eb68677096e3a403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resetDelay: 0
+--- !u!114 &6610638456373053326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135742299174292419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142ea3a0a99b91144924fcfbb8aad460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &680824257440347710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135742299174292419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
-    actionSetPath: /actions/default
+    actionSetPath: 
   hideHandOnAttach: 1
   hideSkeletonOnAttach: 0
   hideControllerOnAttach: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &6610638456373053326
+--- !u!114 &8528407746345334165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3135742299174292419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34d5de2a46ae5c542a6bc118de363296, type: 3}
+  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attachmentFlags: 44
@@ -334,32 +334,10 @@ MonoBehaviour:
   restoreOriginalParent: 0
   onPickUp:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3173489315290616288}
-        m_MethodName: HandleOnGrab
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3173489315290616288}
-        m_MethodName: HandleOnRelease
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
   onHeldUpdate:
     m_PersistentCalls:
       m_Calls: []
