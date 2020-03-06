@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSourceController),typeof(Renderer))]
 public class AudioBubbleController : MonoBehaviour
 {
-    Vector3 _startPosition;
+    [SerializeField] AudioData _recording;
+    
     Quaternion _startRotation;
     bool _isInRest;
 
@@ -44,12 +45,12 @@ public class AudioBubbleController : MonoBehaviour
 #endif
     }
 
-    public void Initialize(Vector3 startPosition, Quaternion rotation)
+    public void Initialize(AudioData data)
     {
         _isInRest = true;
 
-        _startRotation = rotation;
-        _startPosition = startPosition;
+        _startRotation = new Quaternion();
+        _recording = data;
     }
 
     public void HandleOnGrab()
@@ -64,7 +65,7 @@ public class AudioBubbleController : MonoBehaviour
             _resetPositionCoroutine = null;
         }
 
-        _audioSourceController.PlayAudio();
+        _audioSourceController.PlayAudio(_recording.Clip);
     }
 
     public void HandleOnRelease()
@@ -79,7 +80,7 @@ public class AudioBubbleController : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(_resetDelay);
 
-        transform.position = _startPosition;
+        transform.position = _recording.Location;
         _isInRest = true;
     }
 }

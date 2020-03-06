@@ -7,8 +7,8 @@ using UnityEngine.Events;
 public class TestScript : MonoBehaviour
 {
     [SerializeReference] AudioData _data;
-    [SerializeField] AudioSource _source;
     [SerializeField] UnityAction<AudioClip> _clipRecorded;
+    [SerializeField] AudioBubbleController _bubbleBlueprint;
 
     AudioClip _recording;
 
@@ -26,7 +26,6 @@ public class TestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _source = GetComponent<AudioSource>();
         _inputDevices = Microphone.devices;
         _inputDevice = null;
     }
@@ -71,6 +70,9 @@ public class TestScript : MonoBehaviour
                     _data = ScriptableObject.CreateInstance<AudioData>();
                     _data.Instantiate(fileLocation, Vector3.zero, AudioType.WAV, recording);
 
+                    var newBubble = Instantiate(_bubbleBlueprint);
+                    newBubble.Initialize(_data);
+
                     _recording = null;
                 }
 
@@ -89,6 +91,7 @@ public class TestScript : MonoBehaviour
         {
             _data = ScriptableObject.CreateInstance<AudioData>();
             _data.Instantiate(_fileLocation, Vector3.zero, AudioType.WAV);
+
         }
 
         if (Input.GetKeyDown(KeyCode.L) && _data != null)
@@ -97,6 +100,7 @@ public class TestScript : MonoBehaviour
             {
                 _data.SubscribeToLoadEvent((clip) =>
                 {
+
                     _fileClip = clip;
                 });
                 loadProcces = StartCoroutine(_data.LoadAudio());

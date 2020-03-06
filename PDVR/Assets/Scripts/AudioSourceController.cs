@@ -15,6 +15,12 @@ public class AudioSourceController : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
+    public void PlayAudio(AudioClip clip, float point = 0)
+    {
+        _audioSource.clip = clip;
+        PlayAudio(point);
+    }
+
     public void PlayAudio(float point = 0f)
     {
         if (_audioSource.clip == null)
