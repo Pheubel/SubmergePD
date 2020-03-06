@@ -50,7 +50,7 @@ namespace Utilities
         private static readonly byte[] fmt = Encoding.UTF8.GetBytes("fmt ");
         private static readonly byte[] dataString = Encoding.UTF8.GetBytes("data");
 
-        public static void Save(string filename, AudioClip clip, bool trim = false)
+        public static string Save(string filename, AudioClip clip, bool trim = false)
         {
             if (!filename.ToLower().EndsWith(".wav"))
             {
@@ -68,6 +68,8 @@ namespace Utilities
                 var wav = GetWav(clip, out var length, trim);
                 writer.Write(wav, 0, (int)length);
             }
+
+            return filepath;
         }
 
         public static byte[] GetWav(AudioClip clip, out uint length, bool trim = false)
