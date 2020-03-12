@@ -10,13 +10,24 @@ public class AudioToolController : MonoBehaviour
 
     MicrophoneRecorder _recorder;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnEnable()
     {
-        _recorder = GetComponent<MicrophoneRecorder>();
+        if (_recorder == null)
+            _recorder = GetComponent<MicrophoneRecorder>();
 
         _recordAction.AddOnStateUpListener(HandleRecordActionUp, _inputSource);
         _recordAction.AddOnStateDownListener(HandleRecordActionDown, _inputSource);
+
+        _recorder.AddRecordedListener(HandleClipRecorded);
+    }
+
+    private void OnDisable()
+    {
+        _recordAction.AddOnStateUpListener(HandleRecordActionUp, _inputSource);
+        _recordAction.AddOnStateDownListener(HandleRecordActionDown, _inputSource);
+
+        _recorder.RemoveRecordedListener(HandleClipRecorded);
     }
 
     private void HandleRecordActionUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
@@ -40,11 +51,11 @@ public class AudioToolController : MonoBehaviour
         newBubble.Initialize(data);
     }
 
-    private void OnDestroy()
-    {
-        _recordAction.RemoveOnStateUpListener(HandleRecordActionUp, _inputSource);
-        _recordAction.RemoveOnStateDownListener(HandleRecordActionDown, _inputSource);
-    }
+    //private void OnDestroy()
+    //{
+    //    _recordAction.RemoveOnStateUpListener(HandleRecordActionUp, _inputSource);
+    //    _recordAction.RemoveOnStateDownListener(HandleRecordActionDown, _inputSource);
+    //}
 
 #if UNITY_EDITOR // only have the update loop while in the editor for debugging
 
@@ -52,7 +63,7 @@ public class AudioToolController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
             HandleRecordActionDown(_recordAction, _inputSource);
-        else if(Input.GetKeyUp(KeyCode.R))
+        else if (Input.GetKeyUp(KeyCode.R))
             HandleRecordActionUp(_recordAction, _inputSource);
     }
 

@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class MicrophoneRecorder : MonoBehaviour
 {
-    [SerializeField] RecordedEvent _clipRecorded;
+    FinishedRecordingEvent _clipRecorded = new FinishedRecordingEvent();
     [Tooltip("The time in seconds the microphone will record for.")]
     [SerializeField] int _recordingTime = 120;
     [Tooltip("The amound of samples recorded per second.")]
@@ -31,6 +31,12 @@ public class MicrophoneRecorder : MonoBehaviour
     private string _recordingDevice;
     private string _recordingName;
 
+    public void AddRecordedListener(UnityAction<AudioClip> handler) =>
+        _clipRecorded.AddListener(handler);
+
+    public void RemoveRecordedListener(UnityAction<AudioClip> handler) =>
+        _clipRecorded.RemoveListener(handler);
+
     public void StartNewRecording(string recordingName = null)
     {
         // ends the old recording before starting a new one
@@ -50,6 +56,9 @@ public class MicrophoneRecorder : MonoBehaviour
             int length = Microphone.GetPosition(RecordingDevice);
             Microphone.End(RecordingDevice);
 
+            if (length == 0)
+                return;
+
             var recording = AudioClip.Create(_recordingName ?? "Microphone clip", length, 1, _recordFrequency, false);
             var samples = new float[length];
 
@@ -62,6 +71,5 @@ public class MicrophoneRecorder : MonoBehaviour
         }
     }
 
-    [System.Serializable]
-    private class RecordedEvent : UnityEvent<AudioClip> { }
+    private class FinishedRecordingEvent :  UnityEvent<AudioClip>{}
 }
