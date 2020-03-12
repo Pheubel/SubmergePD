@@ -20,20 +20,25 @@ public class SceneHandler : MonoBehaviour
     {
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
-        laserPointer.PointerClick += PointerClick;
+        laserPointer.PointerSqueeze += PointerSqueeze;
+        laserPointer.PointerRelease += PointerRelease;
     }
 
-    public void PointerClick(object sender, PointerEventArgs e)
+    public void PointerSqueeze(object sender, PointerEventArgs e)
     {
+        if (e.target == null)
+            return;
+
         print(e.target.position);
         line.SetPosition(0, e.target.position);
-        
+
     }
 
     public void PointerInside(object sender, PointerEventArgs e)
     {
- 
-            
+        if (e.target == null)
+            return;
+
         MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
         meshRenderer.material.color = enterColor;
     }
@@ -42,5 +47,14 @@ public class SceneHandler : MonoBehaviour
     {
         MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
         meshRenderer.material.color = normalColor;
+    }
+
+    public void PointerRelease(object sender, PointerEventArgs e)
+    {
+        if (e.target == null)
+            return;
+        print(e.target.position);
+        line.SetPosition(1, e.target.position);
+
     }
 }

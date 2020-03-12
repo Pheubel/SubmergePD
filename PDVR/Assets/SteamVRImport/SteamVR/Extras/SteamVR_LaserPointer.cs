@@ -97,6 +97,12 @@ namespace Valve.VR.Extras
                 PointerSqueeze(this, e);
         }
 
+        public virtual void OnPointerRelease(PointerEventArgs e)
+        {
+            if (PointerSqueeze != null)
+                PointerRelease(this, e);
+        }
+
 
         private void Update()
         {
@@ -153,7 +159,24 @@ namespace Valve.VR.Extras
 
             if (squeeze.GetStateDown(pose.inputSource))
             {
-                print("it went down");
+                print("it went down "+ hit.transform);
+                PointerEventArgs argsSqueeze = new PointerEventArgs();
+                argsSqueeze.fromInputSource = pose.inputSource;
+                argsSqueeze.distance = hit.distance;
+                argsSqueeze.flags = 0;
+                argsSqueeze.target = hit.transform;
+                OnPointerSqueeze(argsSqueeze);
+            }
+
+            if (squeeze.GetStateUp(pose.inputSource))
+            {
+                print("it went back up "+ hit.transform);
+                PointerEventArgs argsRelease = new PointerEventArgs();
+                argsRelease.fromInputSource = pose.inputSource;
+                argsRelease.distance = hit.distance;
+                argsRelease.flags = 0;
+                argsRelease.target = hit.transform;
+                OnPointerRelease(argsRelease);
             }
 
             if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
