@@ -67,6 +67,8 @@ public class SceneHandler : MonoBehaviour
         else if (e.target.name == "Button")
         {
             Debug.Log("Button was exited");
+            Image buttonImage = e.target.GetComponent<Image>();
+            buttonImage.color = Color.white;
         }
 
     }
