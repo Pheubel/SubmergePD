@@ -51,13 +51,11 @@ public class SceneHandler : MonoBehaviour
         }
         else if (e.target.name == "Button")
         {
-            Debug.Log("Button was entered");
+            Image buttonImage = e.target.GetComponent<Image>();
+            buttonImage.color = Color.red;
         }
         if (e.target == null)
             return;
-
-        MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
-        meshRenderer.material.color = enterColor;
     }
 
     public void PointerOutside(object sender, PointerEventArgs e)
@@ -71,8 +69,6 @@ public class SceneHandler : MonoBehaviour
             Debug.Log("Button was exited");
         }
 
-        MeshRenderer meshRenderer = e.target.GetComponent<MeshRenderer>();
-        meshRenderer.material.color = normalColor;
     }
 
     public void PointerRelease(object sender, PointerEventArgs e)
