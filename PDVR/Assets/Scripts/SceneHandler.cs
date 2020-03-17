@@ -16,24 +16,27 @@ public class SceneHandler : MonoBehaviour
 
     public SteamVR_LaserPointer laserPointer;
     public GameObject prefab; // This is our prefab object that will be exposed in the inspector
-
-    public int numberToCreate; // number of objects to create. Exposed in inspector
+    public GameObject prefab2;
+    public GameObject prefab3;
+    public GameObject prefab4;
+    public GameObject content;
+    public GameObject menu;
 
 
     void Awake()
     {
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;
-        laserPointer.PointerSqueeze += PointerSqueeze;
         laserPointer.PointerRelease += PointerRelease;
+        laserPointer.PointerClick += PointerClick;
+
     }
 
     void Start()
     {
-        Populate(3);
     }
 
-    public void PointerSqueeze(object sender, PointerEventArgs e)
+    public void PointerClick(object sender, PointerEventArgs e)
     {
         if (e.target == null)
             return;
@@ -43,26 +46,36 @@ public class SceneHandler : MonoBehaviour
         if (e.target.name == "Cube")
         {
             Debug.Log("Cube was clicked");
+            ClearChildren(e.target);
         }
         else if (e.target.name == "ButtonFotos")
         {
             Debug.Log("Fotos Button was clicked");
-            Populate(3);
+            ClearChildren(e.target);
+            Populate(3, prefab);
         }
         else if (e.target.name == "ButtonBewijstukken")
         {
             Debug.Log("Bewijs Button was clicked");
-            Populate(8);
+            ClearChildren(e.target);
+            Populate(8, prefab2);
         }
         else if (e.target.name == "ButtonModels")
         {
             Debug.Log("Models  Button was clicked");
-            Populate(2);
+            ClearChildren(e.target);
+            Populate(2, prefab3);
         }
         else if (e.target.name == "ButtonFavorieten")
         {
             Debug.Log("Favorieten Button was clicked");
-            Populate(15);
+            ClearChildren(e.target);
+            Populate(15, prefab4);
+        }
+        else if (e.target.name == "ButtonClose")
+        {
+            Debug.Log("Close Button was clicked");
+            menu.GetComponent<Canvas>().enabled = false;
         }
 
     }
@@ -108,34 +121,28 @@ public class SceneHandler : MonoBehaviour
 
     }
 
-    void Populate(int numberOfItems)
+    void Populate(int numberOfItems, GameObject image)
     {
-        ClearChildren();
         GameObject newObj; // Create GameObject instance
 
         for (int i = 0; i < numberOfItems; i++)
         {
             // Create new instances of our prefab until we've created as many as we specified
-            newObj = (GameObject)Instantiate(prefab, transform);
+            newObj = (GameObject)Instantiate(image, content.transform);
 
         }
 
     }
 
-    void ClearChildren()
+    void ClearChildren(Transform target)
     {
-        int i = 0;
-        GameObject[] allChildren = new GameObject[prefab.transform.childCount];
-        foreach (GameObject child in prefab.transform)
-        {
-            allChildren[i] = child.gameObject;
-            i += 1;
+        foreach (Transform child in content.transform) {
+            GameObject.Destroy(child.gameObject);
         }
+    }
 
-        foreach (GameObject child in allChildren)
-        {
-            DestroyImmediate(child.gameObject);
-        }
-      
+    public void activateMenu()
+    {
+        menu.GetComponent<Canvas>().enabled = true;
     }
 }
