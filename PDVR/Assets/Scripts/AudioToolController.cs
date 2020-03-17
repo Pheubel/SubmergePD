@@ -4,6 +4,7 @@ using Valve.VR;
 public class AudioToolController : MonoBehaviour
 {
     [SerializeField] AudioBubbleController _bubblePrefab;
+    [SerializeField] Transform _handLocation;
     [Header("Input")]
     [SerializeField] SteamVR_Action_Boolean _recordAction;
     [SerializeField] SteamVR_Input_Sources _inputSource;
@@ -42,7 +43,7 @@ public class AudioToolController : MonoBehaviour
 
     public void HandleClipRecorded(AudioClip clip)
     {
-        var newBubble = Instantiate(_bubblePrefab);
+        var newBubble = Instantiate(_bubblePrefab,_handLocation.position,_handLocation.rotation);
         var data = ScriptableObject.CreateInstance<AudioData>();
 
         var fileLocation = "file:///" + Utilities.SavWav.Save($"{clip.name}.wav", clip, true);
