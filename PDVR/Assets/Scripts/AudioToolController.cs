@@ -48,7 +48,7 @@ public class AudioToolController : MonoBehaviour
 
         var fileLocation = "file:///" + Utilities.SavWav.Save($"{clip.name}.wav", clip, true);
 
-        data.Instantiate(fileLocation, Vector3.zero, AudioType.WAV, clip);
+        data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
         newBubble.Initialize(data);
     }
 
