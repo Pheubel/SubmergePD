@@ -13,6 +13,7 @@ public class AudioBubbleController : MonoBehaviour
     [Tooltip("The time in seconds before the bubble is reset to it's original position.")]
     [SerializeField] float _resetDelay;
 
+    Rigidbody _rigidbody;
     AudioSourceController _audioSourceController;
     Renderer _renderer;
 
@@ -24,6 +25,7 @@ public class AudioBubbleController : MonoBehaviour
 
         _audioSourceController = GetComponent<AudioSourceController>();
         _renderer = GetComponent<Renderer>();
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -81,6 +83,7 @@ public class AudioBubbleController : MonoBehaviour
         yield return new WaitForSecondsRealtime(_resetDelay);
 
         transform.position = _recording.Location;
+        _rigidbody.velocity = Vector3.zero;
         _isInRest = true;
     }
 }
