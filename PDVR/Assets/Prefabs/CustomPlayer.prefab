@@ -1702,6 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f566d2fd77e6874ba9bcb4f47cc8ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _defaultControler: {fileID: 6019230803072328891}
   _magnifyTool: {fileID: 6445340082781785148}
   _recordTool: {fileID: 3102769466802960414}
   _toolSelectionInterface: {fileID: 3042243931364677479}
@@ -3514,6 +3515,12 @@ PrefabInstance:
 --- !u!4 &7337423029659621032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6000197985605521808, guid: fa750be5868119947b7b235818d6177e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3933682179555051320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6019230803072328891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7286724828279530371, guid: fa750be5868119947b7b235818d6177e,
     type: 3}
   m_PrefabInstance: {fileID: 3933682179555051320}
   m_PrefabAsset: {fileID: 0}

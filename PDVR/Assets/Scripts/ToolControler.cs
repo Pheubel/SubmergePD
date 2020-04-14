@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ToolControler : MonoBehaviour
 {
+    [SerializeField] GameObject _defaultControler;
     [SerializeField] GameObject _magnifyTool;
     [SerializeField] GameObject _recordTool;
 
@@ -18,6 +19,7 @@ public class ToolControler : MonoBehaviour
         _magnifyTool.SetActive(false);
         _recordTool.SetActive(false);
         _toolSelectionInterface.SetActive(_interfaceActive);
+        _activeTool = _defaultControler;
     }
 
     // Update is called once per frame
@@ -31,7 +33,7 @@ public class ToolControler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (_activeTool != null)
+            if (_activeTool != _magnifyTool)
                 _activeTool.SetActive(false);
 
             _magnifyTool.SetActive(true);
@@ -43,7 +45,7 @@ public class ToolControler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (_activeTool != null)
+            if (_activeTool != _recordTool)
                 _activeTool.SetActive(false);
 
             _recordTool.SetActive(true);
@@ -55,10 +57,14 @@ public class ToolControler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            if (_activeTool != null)
+            if (_activeTool != _defaultControler)
                 _activeTool.SetActive(false);
 
-            _activeTool = null;
+            _defaultControler.SetActive(true);
+            _activeTool = _defaultControler;
+            _interfaceActive = false;
+
+            _toolSelectionInterface.SetActive(_interfaceActive);
         }
     }
 }
