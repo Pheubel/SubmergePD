@@ -1,70 +1,88 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using Valve.VR;
 
 public class ToolControler : MonoBehaviour
 {
-    [SerializeField] GameObject _defaultControler;
-    [SerializeField] GameObject _magnifyTool;
-    [SerializeField] GameObject _recordTool;
+    [SerializeField] GameObject[] _tools;
+    [SerializeField] GameObject _default;
 
     [SerializeField] GameObject _toolSelectionInterface;
 
-    bool _interfaceActive = false;
-
     GameObject _activeTool;
+    int _selectedIndex = -1;
+
+    private Vector2 touchPosition = Vector2.zero;
+
+    [SerializeField] private float degreeIncrement = 40.0f;
+    [SerializeField] private float offsetDegree = 0f;
+
+    [SerializeField] UnityEvent<int> _highlightChanged;
 
     private void Start()
     {
-        _magnifyTool.SetActive(false);
-        _recordTool.SetActive(false);
-        _toolSelectionInterface.SetActive(_interfaceActive);
-        _activeTool = _defaultControler;
+        _activeTool = _default;
+    }
+
+    public void ToggleInterface(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState)
+    {
+        _toolSelectionInterface.SetActive(newState);
+    }
+
+    public void SelectCurrentHighlightedTool()
+    {
+        if (!_toolSelectionInterface.activeSelf)
+            return;
+
+        _activeTool.SetActive(false);
+
+        // determine which tool is selected
+        _activeTool = _selectedIndex != -1 ?
+            _tools[_selectedIndex] :
+            _default;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            _interfaceActive = !_interfaceActive;
-            _toolSelectionInterface.SetActive(_interfaceActive);
-        }
+        Vector2 direction = Vector2.zero + touchPosition;
+        float rotation = (getDegree(direction) + offsetDegree) % 360f;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if (_activeTool != _magnifyTool)
-                _activeTool.SetActive(false);
+        SetSelectedEvent(rotation);
+    }
 
-            _magnifyTool.SetActive(true);
-            _activeTool = _magnifyTool;
-             _interfaceActive = false;
+    private float getDegree(Vector2 direction)
+    {
+        float value = Mathf.Atan2(direction.x, direction.y);
+        value *= Mathf.Rad2Deg;
 
-            _toolSelectionInterface.SetActive(_interfaceActive);
-        }
+        if (value < 0)
+            value += 360.0f;
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            if (_activeTool != _recordTool)
-                _activeTool.SetActive(false);
+        return value;
+    }
 
-            _recordTool.SetActive(true);
-            _activeTool = _recordTool;
-            _interfaceActive = false;
+    private int GetNearestIncrement(float rotation)
+    {
+        return Mathf.RoundToInt(rotation / degreeIncrement);
+    }
 
-            _toolSelectionInterface.SetActive(_interfaceActive);
-        }
+    private void SetSelectedEvent(float currentRotation)
+    {
+        int index = GetNearestIncrement(currentRotation);
 
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            if (_activeTool != _defaultControler)
-                _activeTool.SetActive(false);
+        if (index > _tools.Length - 1 || index < 0)
+            _selectedIndex = -1;
+        else
+            _selectedIndex = index;
 
-            _defaultControler.SetActive(true);
-            _activeTool = _defaultControler;
-            _interfaceActive = false;
+        _highlightChanged.Invoke(_selectedIndex);
+    }
 
-            _toolSelectionInterface.SetActive(_interfaceActive);
-        }
+    public void SetTouchPosition(SteamVR_Action_Vector2 fromAction, SteamVR_Input_Sources fromSource, Vector2 axis, Vector2 delta)
+    {
+        touchPosition = axis;
     }
 }
