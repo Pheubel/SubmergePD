@@ -24,6 +24,15 @@ public class ToolControler : MonoBehaviour
     private void Start()
     {
         _activeTool = _default;
+
+        _toolSelectionInterface.SetActive(false);
+
+        for (int i = 0; i < _tools.Length; i++)
+        {
+            _tools[i].SetActive(false);
+        }
+
+        _default.SetActive(true);
     }
 
     public void ToggleInterface(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState)
@@ -42,6 +51,8 @@ public class ToolControler : MonoBehaviour
         _activeTool = _selectedIndex != -1 ?
             _tools[_selectedIndex] :
             _default;
+
+        _activeTool.SetActive(true);
     }
 
     // Update is called once per frame
@@ -49,6 +60,8 @@ public class ToolControler : MonoBehaviour
     {
         Vector2 direction = Vector2.zero + touchPosition;
         float rotation = (getDegree(direction) + offsetDegree) % 360f;
+
+        Debug.Log("degrees: " + rotation);
 
         SetSelectedEvent(rotation);
     }
@@ -78,7 +91,7 @@ public class ToolControler : MonoBehaviour
         else
             _selectedIndex = index;
 
-        _highlightChanged.Invoke(_selectedIndex);
+        _highlightChanged?.Invoke(_selectedIndex);
     }
 
     public void SetTouchPosition(SteamVR_Action_Vector2 fromAction, SteamVR_Input_Sources fromSource, Vector2 axis, Vector2 delta)
