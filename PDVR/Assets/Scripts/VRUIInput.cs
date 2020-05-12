@@ -2,20 +2,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 using Valve.VR.Extras;
 
 [RequireComponent(typeof(SteamVR_LaserPointer))]
 public class VRUIInput : MonoBehaviour
 {
-    private SteamVR_LaserPointer _laserPointer;
 
-    private void Start()
-    {
-        _laserPointer = GetComponent<SteamVR_LaserPointer>();
-    }
+    private SteamVR_LaserPointer _laserPointer;
 
     private void OnEnable()
     {
+        if(_laserPointer == null)
+            _laserPointer = GetComponent<SteamVR_LaserPointer>();
+
         _laserPointer.PointerIn += HandlePointerIn;
         _laserPointer.PointerOut += HandlePointerOut;
         _laserPointer.PointerClick += HandlePointerClick;
