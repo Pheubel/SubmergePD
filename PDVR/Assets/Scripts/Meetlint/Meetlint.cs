@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Valve.VR;
 
 public class Meetlint : MonoBehaviour
 {
     [Tooltip("The amount of Unity Units that equate to 1 real world meter.")]
     [SerializeField] private float _scale = 1;
 
+    [SerializeField] private SteamVR_Action_Boolean _triggerAction;
+    [SerializeField] private SteamVR_Input_Sources _inputSource;
     [SerializeField] private GameObject _measurePoint;
     [SerializeField] private Line _lineTemplate;
 
@@ -21,12 +25,9 @@ public class Meetlint : MonoBehaviour
             _activeLine.SetEndPositionDirty(transform.position);
             SetLengthText(_activeLine.RawLengthDirty);
         }
-
-        if (Input.GetKeyDown(KeyCode.L))
-            HandleTrigger();
     }
 
-    public void HandleTrigger()
+    public void HandleTrigger(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         if (_activated)
         {
@@ -73,8 +74,15 @@ public class Meetlint : MonoBehaviour
         _textMesh = GetComponentInChildren<TextMesh>();
     }
 
+    private void OnEnable()
+    {
+        _triggerAction.AddOnStateDownListener(HandleTrigger, _inputSource);
+    }
+
     private void OnDisable()
     {
+        _triggerAction.RemoveOnStateDownListener(HandleTrigger, _inputSource);
+
         if (_activated && _activeLine.enabled)
             Destroy(_activeLine);
         _activeLine = null;

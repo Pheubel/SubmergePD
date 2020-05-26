@@ -218,6 +218,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scale: 1
+  _triggerAction:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+  _inputSource: 2
   _measurePoint: {fileID: 4821222567532781491}
   _lineTemplate: {fileID: 4233523950305723099, guid: 9f4276564c8b51443a69ada04657fbfa,
     type: 3}
