@@ -53,7 +53,7 @@ MonoBehaviour:
   _toolMenu: {fileID: 4040853739867294126}
   _magnifyMenu: {fileID: 1230550942660940763}
   _sketchMenu: {fileID: 7584259645202206321}
-  _meassureMenu: {fileID: 0}
+  _meassureMenu: {fileID: 123096476249781028}
   _databaseMenu: {fileID: 3600593694766620613}
 --- !u!1001 &1289121453389314567
 PrefabInstance:
@@ -671,6 +671,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6314665126502584982}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &123096476249781028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6203534686946566578, guid: c05e40398701c2f488d3e7213b640cce,
+    type: 3}
+  m_PrefabInstance: {fileID: 6314665126502584982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78430b01bf26afd409e54ac44f8d78aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8397116401252158467
 PrefabInstance:
   m_ObjectHideFlags: 0

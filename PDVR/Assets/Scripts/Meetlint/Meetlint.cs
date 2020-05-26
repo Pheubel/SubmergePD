@@ -69,6 +69,10 @@ public class Meetlint : MonoBehaviour
         };
     }
 
+    public void UseMillimeters() => ActiveMeasureMode = MeasureMode.Millimeter;
+    public void UseCentimeters() => ActiveMeasureMode = MeasureMode.Centimeter;
+    public void UseMeters() => ActiveMeasureMode = MeasureMode.Meter;
+
     private void Start()
     {
         _textMesh = GetComponentInChildren<TextMesh>();
