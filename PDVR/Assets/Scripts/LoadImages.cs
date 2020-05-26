@@ -28,14 +28,32 @@ public class LoadImages : MonoBehaviour
     {
         get { return RegionEndpoint.GetBySystemName(S3Region); }
     }
+
+
     public string S3BucketName = null;
-    public Text ResultText = null;
-    public int count = 0;
+    public int index = 0;
     public List<String> bhvs;
     public List<String> dates;
     public List<String> sins;
     public List<String> addresses;
     public List<Texture> images;
+
+    public GameObject bhvText;
+    public GameObject dateText;
+    public GameObject sinText;
+    public GameObject addressText;
+
+    public Canvas Panel_Photos;
+    public Canvas Panel_Models;
+
+
+    public GameObject imageMain;
+    public GameObject imageOne;
+    public GameObject imageTwo;
+    public GameObject imageThree;
+    public GameObject imageFour;
+    public GameObject imageFive;
+
 
     #region private members
 
@@ -66,13 +84,25 @@ public class LoadImages : MonoBehaviour
         }
     }
 
+
+    private int index1 = 1;
+    private int index2 = 2;
+    private int index3 = 3;
+    private int index4 = 4;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
 
-          ListingObjectsAsync(S3BucketName, Client);
+        AsyncAwaitMethods();
+        
+    }
+
+    async void AsyncAwaitMethods()
+    {
+        await ListingObjectsAsync(S3BucketName, Client);
+        initializeListAsync();
     }
 
     async Task ReadObjectDataAsync(String key, String bucketName, IAmazonS3 client)
@@ -85,33 +115,38 @@ public class LoadImages : MonoBehaviour
                 BucketName = bucketName,
                 Key = key
             };
+
+
+
             using (GetObjectResponse response = await client.GetObjectAsync(request))
             using (Stream responseStream = response.ResponseStream)
-            using (StreamReader reader = new StreamReader(responseStream))
             {
+
                 byte[] data = null;
                 if (response.ResponseStream != null)
                 {
-                    Debug.Log("Did we get here?");
      
-                byte[] buffer = new byte[16 * 1024];
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    int read;
-                    while ((read = responseStream.Read(buffer, 0, buffer.Length)) > 0) ;
-                    {
-                        ms.Write(buffer, 0, read);
-                    }
-                    data = ms.ToArray();
 
-                }
-                images.Add(bytesToTexture2D(data));
+                    byte[] buffer = new byte[16 * 1024];
+                    var stream = new MemoryStream();
+                    await responseStream.CopyToAsync(stream);
+                    stream.Position = 0;
 
-                string title = response.Metadata["x-amz-meta-sin"]; // Assume you have "title" as medata added to the object.
-                string contentType = response.Headers["Content-Type"];
+                    data = stream.ToArray();
+                    images.Add(bytesToTexture2D(data));
 
-                Debug.Log("Object metadata, Title: {0} " + title);
-                Debug.Log("Content type: {0} " + contentType);
+
+
+                    string title = response.Metadata["x-amz-meta-sin"]; // Assume you have "title" as medata added to the object.
+                    bhvs.Add(response.Metadata["x-amz-meta-bhv"]);
+                    dates.Add(response.Metadata["x-amz-meta-date"]);
+                    sins.Add(response.Metadata["x-amz-meta-sin"]);
+                    addresses.Add(response.Metadata["x-amz-meta-address"]);
+                    string contentType = response.Headers["Content-Type"];
+
+                    Debug.Log("Object metadata, Title: {0} " + title);
+                    Debug.Log("Content type: {0} " + contentType);
+
 
 
                 }
@@ -119,11 +154,11 @@ public class LoadImages : MonoBehaviour
         }
         catch (AmazonS3Exception e)
         {
-            Debug.Log("Error encountered ***. Message:'{0}' when writing an object "+ e.Message);
+            Debug.Log("Error encountered ***. Message:'{0}' when writing an object " + e.Message);
         }
         catch (Exception e)
         {
-            Debug.Log("Unknown encountered on server. Message:'{0}' when writing an object "+ e.Message);
+            Debug.Log("Unknown encountered on server. Message:'{0}' when writing an object " + e.Message);
         }
     }
 
@@ -173,6 +208,100 @@ public class LoadImages : MonoBehaviour
         Texture2D tex = new Texture2D(2, 2);
         tex.LoadImage(imageBytes);
         return tex;
+    }
+
+
+    private async Task initializeListAsync()
+    {
+        await Task.Delay(2500);
+        RawImage image0 = imageMain.GetComponent<RawImage>();
+        image0.texture = images[0];
+
+        bhvText.GetComponent<Text>().text = bhvs[0];
+        sinText.GetComponent<Text>().text = sins[0];
+        addressText.GetComponent<Text>().text = addresses[0];
+        dateText.GetComponent<Text>().text = dates[0];
+
+
+
+        RawImage image1 = imageOne.GetComponent<RawImage>();
+        image1.texture = images[0];
+        RawImage image2 = imageTwo.GetComponent<RawImage>();
+        image2.texture = images[1];
+        RawImage image3 = imageThree.GetComponent<RawImage>();
+        image3.texture = images[2];
+        RawImage image4 = imageFour.GetComponent<RawImage>();
+        image4.texture = images[3];
+        RawImage image5 = imageFive.GetComponent<RawImage>();
+        image5.texture = images[4];
+
+
+    }
+
+    public void buttonPrevious()
+    {
+        Debug.Log("CLICK");
+        if (index > 0)
+        {
+            index--;
+            index1--;
+            index2--;
+            index3--;
+            index4--;
+            imageMain.GetComponent<RawImage>().texture = images[index];
+            imageOne.GetComponent<RawImage>().texture = images[index];
+
+            imageTwo.GetComponent<RawImage>().texture = images[index1];
+            imageThree.GetComponent<RawImage>().texture = images[index2];
+            imageFour.GetComponent<RawImage>().texture = images[index3];
+            imageFive.GetComponent<RawImage>().texture = images[index4];
+
+            bhvText.GetComponent<Text>().text = bhvs[index];
+            sinText.GetComponent<Text>().text = sins[index];
+            addressText.GetComponent<Text>().text = addresses[index];
+            dateText.GetComponent<Text>().text = dates[index];
+        }
+       
+
+    }
+
+    public void buttonNext()
+    {
+        Debug.Log("CLICK");
+
+        if (index < images.Count)
+        {
+            index++;
+            index1++;
+            index2++;
+            index3++;
+            index4++;
+
+            imageMain.GetComponent<RawImage>().texture = images[index];
+            imageOne.GetComponent<RawImage>().texture = images[index];
+
+            imageTwo.GetComponent<RawImage>().texture = images[index1];
+            imageThree.GetComponent<RawImage>().texture = images[index2];
+            imageFour.GetComponent<RawImage>().texture = images[index3];
+            imageFive.GetComponent<RawImage>().texture = images[index4];
+
+
+
+            bhvText.GetComponent<Text>().text = bhvs[index];
+            sinText.GetComponent<Text>().text = sins[index];
+            addressText.GetComponent<Text>().text = addresses[index];
+            dateText.GetComponent<Text>().text = dates[index];
+        }
+       
+
+
+    }
+
+  
+    public void setActiveModels()
+    {
+        Panel_Photos.GetComponent<Canvas>().enabled = false;
+        Panel_Models.GetComponent<Canvas>().enabled = true;
     }
 
 
