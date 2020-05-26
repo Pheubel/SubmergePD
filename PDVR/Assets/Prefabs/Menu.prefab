@@ -4360,9 +4360,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8745887a04b0f584b90107fda4b2fd53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdentityPoolId: 
+  IdentityPoolId: eu-west-1:dd7cf40d-b454-4555-8db4-36166d637adb
   CognitoIdentityRegion: eu-west-1
   S3Region: eu-west-1
+  S3BucketName: pdvr-media
   ResultText: {fileID: 0}
   Images: []
   imageHolders: []
