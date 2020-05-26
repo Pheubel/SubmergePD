@@ -548,8 +548,10 @@ GameObject:
   - component: {fileID: 3599947456969887036}
   - component: {fileID: 6335551988792488914}
   - component: {fileID: 7980145460390438853}
+  - component: {fileID: 6873202657316847503}
+  - component: {fileID: 3419499728617711699}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PlacePicture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,6 +657,45 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6873202657316847503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845001647064823407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464e1f6679ac95840ade3da4b946e496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 195733694582969262}
+        m_MethodName: createObjectFromImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &3419499728617711699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845001647064823407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 150, y: 30, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3839162844850424242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,7 +2122,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199529675012716383}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 75, y: 76, z: 20}
@@ -2401,7 +2442,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9199529675237331193}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 75, y: 76, z: 20}
@@ -4027,7 +4068,8 @@ MonoBehaviour:
   imageThree: {fileID: 9199529675973796900}
   imageFour: {fileID: 9199529675026935895}
   imageFive: {fileID: 9199529675488390031}
-  prefabImage: {fileID: 0}
+  prefabImage: {fileID: 5071785005337646666, guid: 589175faa743aef4fb4503614e16c3fd,
+    type: 3}
 --- !u!1 &9199529676774171463
 GameObject:
   m_ObjectHideFlags: 0

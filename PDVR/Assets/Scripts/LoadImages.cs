@@ -309,6 +309,10 @@ public class LoadImages : MonoBehaviour
     public void createObjectFromImage()
     {
         
+
+
+        GameObject picture = Instantiate(prefabImage, new Vector3((float)-4.774,(float)0.302, (float)3.844), Quaternion.identity);
+        picture.GetComponent<Renderer>().material.mainTexture = images[index];
     }
 
 
