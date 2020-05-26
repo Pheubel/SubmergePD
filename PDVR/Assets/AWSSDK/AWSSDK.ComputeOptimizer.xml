@@ -1,0 +1,3068 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.ComputeOptimizer</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig">
+            <summary>
+            Configuration for accessing Amazon ComputeOptimizer service
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.AmazonComputeOptimizerException">
+            <summary>
+             Common exception for the ComputeOptimizer service.
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonComputeOptimizerException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonComputeOptimizerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonComputeOptimizerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonComputeOptimizerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonComputeOptimizerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Internal.AmazonComputeOptimizerMetadata">
+            <summary>
+            Service metadata for  Amazon ComputeOptimizer service
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Internal.AmazonComputeOptimizerMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Internal.AmazonComputeOptimizerMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.AccessDeniedException.#ctor(System.String)">
+            <summary>
+            Constructs a new AccessDeniedException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.AccessDeniedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.AccessDeniedException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.AccessDeniedException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.AccessDeniedException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AccessDeniedException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.AutoScalingGroupConfiguration">
+            <summary>
+            Describes the configuration of an Auto Scaling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupConfiguration.DesiredCapacity">
+            <summary>
+            Gets and sets the property DesiredCapacity. 
+            <para>
+            The desired capacity, or number of instances, for the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupConfiguration.InstanceType">
+            <summary>
+            Gets and sets the property InstanceType. 
+            <para>
+            The instance type for the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupConfiguration.MaxSize">
+            <summary>
+            Gets and sets the property MaxSize. 
+            <para>
+            The maximum size, or maximum number of instances, for the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupConfiguration.MinSize">
+            <summary>
+            Gets and sets the property MinSize. 
+            <para>
+            The minimum size, or minimum number of instances, for the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation">
+            <summary>
+            Describes an Auto Scaling group recommendation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.AccountId">
+            <summary>
+            Gets and sets the property AccountId. 
+            <para>
+            The AWS account ID of the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.AutoScalingGroupArn">
+            <summary>
+            Gets and sets the property AutoScalingGroupArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.AutoScalingGroupName">
+            <summary>
+            Gets and sets the property AutoScalingGroupName. 
+            <para>
+            The name of the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.CurrentConfiguration">
+            <summary>
+            Gets and sets the property CurrentConfiguration. 
+            <para>
+            An array of objects that describe the current configuration of the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.Finding">
+            <summary>
+            Gets and sets the property Finding. 
+            <para>
+            The finding classification for the Auto Scaling group.
+            </para>
+             
+            <para>
+            Findings for Auto Scaling groups include:
+            </para>
+             <ul> <li> 
+            <para>
+             <b> <code>NotOptimized</code> </b>—An Auto Scaling group is considered not optimized
+            when AWS Compute Optimizer identifies a recommendation that can provide better performance
+            for your workload.
+            </para>
+             </li> <li> 
+            <para>
+             <b> <code>Optimized</code> </b>—An Auto Scaling group is considered optimized when
+            Compute Optimizer determines that the group is correctly provisioned to run your workload
+            based on the chosen instance type. For optimized resources, Compute Optimizer might
+            recommend a new generation instance type.
+            </para>
+             </li> </ul> <note> 
+            <para>
+            The values that are returned might be <code>NOT_OPTIMIZED</code> or <code>OPTIMIZED</code>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.LastRefreshTimestamp">
+            <summary>
+            Gets and sets the property LastRefreshTimestamp. 
+            <para>
+            The time stamp of when the Auto Scaling group recommendation was last refreshed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.LookBackPeriodInDays">
+            <summary>
+            Gets and sets the property LookBackPeriodInDays. 
+            <para>
+            The number of days for which utilization metrics were analyzed for the Auto Scaling
+            group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.RecommendationOptions">
+            <summary>
+            Gets and sets the property RecommendationOptions. 
+            <para>
+            An array of objects that describe the recommendation options for the Auto Scaling
+            group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendation.UtilizationMetrics">
+            <summary>
+            Gets and sets the property UtilizationMetrics. 
+            <para>
+            An array of objects that describe the utilization metrics of the Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendationOption">
+            <summary>
+            Describes a recommendation option for an Auto Scaling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendationOption.Configuration">
+            <summary>
+            Gets and sets the property Configuration. 
+            <para>
+            An array of objects that describe an Auto Scaling group configuration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendationOption.PerformanceRisk">
+            <summary>
+            Gets and sets the property PerformanceRisk. 
+            <para>
+            The performance risk of the Auto Scaling group configuration recommendation.
+            </para>
+             
+            <para>
+            Performance risk is the likelihood of the recommended instance type not meeting the
+            performance requirement of your workload.
+            </para>
+             
+            <para>
+            The lowest performance risk is categorized as <code>0</code>, and the highest as <code>5</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendationOption.ProjectedUtilizationMetrics">
+            <summary>
+            Gets and sets the property ProjectedUtilizationMetrics. 
+            <para>
+            An array of objects that describe the projected utilization metrics of the Auto Scaling
+            group recommendation option.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.AutoScalingGroupRecommendationOption.Rank">
+            <summary>
+            Gets and sets the property Rank. 
+            <para>
+            The rank of the Auto Scaling group recommendation option.
+            </para>
+             
+            <para>
+            The top recommendation option is ranked as <code>1</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Filter">
+            <summary>
+            Describes a filter that returns a more specific list of recommendations.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Filter.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the filter.
+            </para>
+             
+            <para>
+            Specify <code>Finding</code> to filter the results to a specific findings classification.
+            </para>
+             
+            <para>
+            Specify <code>RecommendationSourceType</code> to filter the results to a specific
+            resource type.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Filter.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The value of the filter.
+            </para>
+             
+            <para>
+            If you specify the <code>name</code> parameter as <code>Finding</code>, and you're
+            recommendations for an <i>instance</i>, then the valid values are <code>Underprovisioned</code>,
+            <code>Overprovisioned</code>, <code>NotOptimized</code>, or <code>Optimized</code>.
+            </para>
+             
+            <para>
+            If you specify the <code>name</code> parameter as <code>Finding</code>, and you're
+            recommendations for an <i>Auto Scaling group</i>, then the valid values are <code>Optimized</code>,
+            or <code>NotOptimized</code>.
+            </para>
+             
+            <para>
+            If you specify the <code>name</code> parameter as <code>RecommendationSourceType</code>,
+            then the valid values are <code>EC2Instance</code>, or <code>AutoScalingGroup</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest">
+            <summary>
+            Container for the parameters to the GetAutoScalingGroupRecommendations operation.
+            Returns Auto Scaling group recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Auto Scaling groups
+            that are configured to run instances of the M, C, R, T, and X instance families. The
+            service does not generate recommendations for Auto Scaling groups that have a scaling
+            policy attached to them, or that do not have the same values for desired, minimum,
+            and maximum capacity. In order for Compute Optimizer to analyze your Auto Scaling
+            groups, they must be of a fixed size. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest.AccountIds">
+            <summary>
+            Gets and sets the property AccountIds. 
+            <para>
+            The AWS account IDs for which to return Auto Scaling group recommendations.
+            </para>
+             
+            <para>
+            Only one account ID can be specified per request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest.AutoScalingGroupArns">
+            <summary>
+            Gets and sets the property AutoScalingGroupArns. 
+            <para>
+            The Amazon Resource Name (ARN) of the Auto Scaling groups for which to return recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            An array of objects that describe a filter that returns a more specific list of Auto
+            Scaling group recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of Auto Scaling group recommendations to return with a single call.
+            </para>
+             
+            <para>
+            To retrieve the remaining results, make another call with the returned <code>NextToken</code>
+            value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to advance to the next page of Auto Scaling group recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsResponse">
+            <summary>
+            This is the response object from the GetAutoScalingGroupRecommendations operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsResponse.AutoScalingGroupRecommendations">
+            <summary>
+            Gets and sets the property AutoScalingGroupRecommendations. 
+            <para>
+            An array of objects that describe Auto Scaling group recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsResponse.Errors">
+            <summary>
+            Gets and sets the property Errors. 
+            <para>
+            An array of objects that describe errors of the request.
+            </para>
+             
+            <para>
+            For example, an error is returned if you request recommendations for an unsupported
+            Auto Scaling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to advance to the next page of Auto Scaling group recommendations.
+            </para>
+             
+            <para>
+            This value is null when there are no more pages of Auto Scaling group recommendations
+            to return.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest">
+            <summary>
+            Container for the parameters to the GetEC2InstanceRecommendations operation.
+            Returns Amazon EC2 instance recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Amazon Elastic Compute
+            Cloud (Amazon EC2) and Amazon EC2 Auto Scaling. It generates recommendations for M,
+            C, R, T, and X instance families. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest.AccountIds">
+            <summary>
+            Gets and sets the property AccountIds. 
+            <para>
+            The AWS account IDs for which to return instance recommendations.
+            </para>
+             
+            <para>
+            Only one account ID can be specified per request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest.Filters">
+            <summary>
+            Gets and sets the property Filters. 
+            <para>
+            An array of objects that describe a filter that returns a more specific list of instance
+            recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest.InstanceArns">
+            <summary>
+            Gets and sets the property InstanceArns. 
+            <para>
+            The Amazon Resource Name (ARN) of the instances for which to return recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of instance recommendations to return with a single call.
+            </para>
+             
+            <para>
+            To retrieve the remaining results, make another call with the returned <code>NextToken</code>
+            value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to advance to the next page of instance recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsResponse">
+            <summary>
+            This is the response object from the GetEC2InstanceRecommendations operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsResponse.Errors">
+            <summary>
+            Gets and sets the property Errors. 
+            <para>
+            An array of objects that describe errors of the request.
+            </para>
+             
+            <para>
+            For example, an error is returned if you request recommendations for an instance of
+            an unsupported instance family.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsResponse.InstanceRecommendations">
+            <summary>
+            Gets and sets the property InstanceRecommendations. 
+            <para>
+            An array of objects that describe instance recommendations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to advance to the next page of instance recommendations.
+            </para>
+             
+            <para>
+            This value is null when there are no more pages of instance recommendations to return.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest">
+            <summary>
+            Container for the parameters to the GetEC2RecommendationProjectedMetrics operation.
+            Returns the projected utilization metrics of Amazon EC2 instance recommendations.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest.EndTime">
+            <summary>
+            Gets and sets the property EndTime. 
+            <para>
+            The time stamp of the last projected metrics data point to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest.InstanceArn">
+            <summary>
+            Gets and sets the property InstanceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the instances for which to return recommendation
+            projected metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest.Period">
+            <summary>
+            Gets and sets the property Period. 
+            <para>
+            The granularity, in seconds, of the projected metrics data points.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest.StartTime">
+            <summary>
+            Gets and sets the property StartTime. 
+            <para>
+            The time stamp of the first projected metrics data point to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest.Stat">
+            <summary>
+            Gets and sets the property Stat. 
+            <para>
+            The statistic of the projected metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsResponse">
+            <summary>
+            This is the response object from the GetEC2RecommendationProjectedMetrics operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsResponse.RecommendedOptionProjectedMetrics">
+            <summary>
+            Gets and sets the property RecommendedOptionProjectedMetrics. 
+            <para>
+            An array of objects that describe a projected metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEnrollmentStatusRequest">
+            <summary>
+            Container for the parameters to the GetEnrollmentStatus operation.
+            Returns the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation also confirms
+            the enrollment status of member accounts within the organization.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetEnrollmentStatusResponse">
+            <summary>
+            This is the response object from the GetEnrollmentStatus operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEnrollmentStatusResponse.MemberAccountsEnrolled">
+            <summary>
+            Gets and sets the property MemberAccountsEnrolled. 
+            <para>
+            Confirms the enrollment status of member accounts within the organization, if the
+            account is a master account of an organization.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEnrollmentStatusResponse.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The enrollment status of the account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetEnrollmentStatusResponse.StatusReason">
+            <summary>
+            Gets and sets the property StatusReason. 
+            <para>
+            The reason for the enrollment status of the account.
+            </para>
+             
+            <para>
+            For example, an account might show a status of <code>Pending</code> because member
+            accounts of an organization require more time to be enrolled in the service.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetRecommendationError">
+            <summary>
+            Describes an error experienced when getting recommendations.
+            
+             
+            <para>
+            For example, an error is returned if you request recommendations for an unsupported
+            Auto Scaling group, or if you request recommendations for an instance of an unsupported
+            instance family.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationError.Code">
+            <summary>
+            Gets and sets the property Code. 
+            <para>
+            The error code.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationError.Identifier">
+            <summary>
+            Gets and sets the property Identifier. 
+            <para>
+            The ID of the error.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationError.Message">
+            <summary>
+            Gets and sets the property Message. 
+            <para>
+            The message, or reason, for the error.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest">
+            <summary>
+            Container for the parameters to the GetRecommendationSummaries operation.
+            Returns the optimization findings for an account.
+            
+             
+            <para>
+            For example, it returns the number of Amazon EC2 instances in an account that are
+            under-provisioned, over-provisioned, or optimized. It also returns the number of Auto
+            Scaling groups in an account that are not optimized, or optimized.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest.AccountIds">
+            <summary>
+            Gets and sets the property AccountIds. 
+            <para>
+            The AWS account IDs for which to return recommendation summaries.
+            </para>
+             
+            <para>
+            Only one account ID can be specified per request.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of recommendation summaries to return with a single call.
+            </para>
+             
+            <para>
+            To retrieve the remaining results, make another call with the returned <code>NextToken</code>
+            value.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to advance to the next page of recommendation summaries.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesResponse">
+            <summary>
+            This is the response object from the GetRecommendationSummaries operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to advance to the next page of recommendation summaries.
+            </para>
+             
+            <para>
+            This value is null when there are no more pages of recommendation summaries to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.GetRecommendationSummariesResponse.RecommendationSummaries">
+            <summary>
+            Gets and sets the property RecommendationSummaries. 
+            <para>
+            An array of objects that summarize a recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.InstanceRecommendation">
+            <summary>
+            Describes an Amazon EC2 instance recommendation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.AccountId">
+            <summary>
+            Gets and sets the property AccountId. 
+            <para>
+            The AWS account ID of the instance recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.CurrentInstanceType">
+            <summary>
+            Gets and sets the property CurrentInstanceType. 
+            <para>
+            The instance type of the current instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.Finding">
+            <summary>
+            Gets and sets the property Finding. 
+            <para>
+            The finding classification for the instance.
+            </para>
+             
+            <para>
+            Findings for instances include:
+            </para>
+             <ul> <li> 
+            <para>
+             <b> <code>Underprovisioned</code> </b>—An instance is considered under-provisioned
+            when at least one specification of your instance, such as CPU, memory, or network,
+            does not meet the performance requirements of your workload. Under-provisioned instances
+            may lead to poor application performance.
+            </para>
+             </li> <li> 
+            <para>
+             <b> <code>Overprovisioned</code> </b>—An instance is considered over-provisioned
+            when at least one specification of your instance, such as CPU, memory, or network,
+            can be sized down while still meeting the performance requirements of your workload,
+            and no specification is under-provisioned. Over-provisioned instances may lead to
+            unnecessary infrastructure cost.
+            </para>
+             </li> <li> 
+            <para>
+             <b> <code>Optimized</code> </b>—An instance is considered optimized when all specifications
+            of your instance, such as CPU, memory, and network, meet the performance requirements
+            of your workload and is not over provisioned. An optimized instance runs your workloads
+            with optimal performance and infrastructure cost. For optimized resources, AWS Compute
+            Optimizer might recommend a new generation instance type.
+            </para>
+             </li> </ul> <note> 
+            <para>
+            The values that are returned might be <code>UNDER_PROVISIONED</code>, <code>OVER_PROVISIONED</code>,
+            or <code>OPTIMIZED</code>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.InstanceArn">
+            <summary>
+            Gets and sets the property InstanceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the current instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.InstanceName">
+            <summary>
+            Gets and sets the property InstanceName. 
+            <para>
+            The name of the current instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.LastRefreshTimestamp">
+            <summary>
+            Gets and sets the property LastRefreshTimestamp. 
+            <para>
+            The time stamp of when the instance recommendation was last refreshed.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.LookBackPeriodInDays">
+            <summary>
+            Gets and sets the property LookBackPeriodInDays. 
+            <para>
+            The number of days for which utilization metrics were analyzed for the instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.RecommendationOptions">
+            <summary>
+            Gets and sets the property RecommendationOptions. 
+            <para>
+            An array of objects that describe the recommendation options for the instance.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.RecommendationSources">
+            <summary>
+            Gets and sets the property RecommendationSources. 
+            <para>
+            An array of objects that describe the source resource of the recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendation.UtilizationMetrics">
+            <summary>
+            Gets and sets the property UtilizationMetrics. 
+            <para>
+            An array of objects that describe the utilization metrics of the instance.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.InstanceRecommendationOption">
+            <summary>
+            Describes a recommendation option for an Amazon EC2 instance.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendationOption.InstanceType">
+            <summary>
+            Gets and sets the property InstanceType. 
+            <para>
+            The instance type of the instance recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendationOption.PerformanceRisk">
+            <summary>
+            Gets and sets the property PerformanceRisk. 
+            <para>
+            The performance risk of the instance recommendation option.
+            </para>
+             
+            <para>
+            Performance risk is the likelihood of the recommended instance type not meeting the
+            performance requirement of your workload.
+            </para>
+             
+            <para>
+            The lowest performance risk is categorized as <code>0</code>, and the highest as <code>5</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendationOption.ProjectedUtilizationMetrics">
+            <summary>
+            Gets and sets the property ProjectedUtilizationMetrics. 
+            <para>
+            An array of objects that describe the projected utilization metrics of the instance
+            recommendation option.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.InstanceRecommendationOption.Rank">
+            <summary>
+            Gets and sets the property Rank. 
+            <para>
+            The rank of the instance recommendation option.
+            </para>
+             
+            <para>
+            The top recommendation option is ranked as <code>1</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupConfigurationUnmarshaller">
+            <summary>
+            Response Unmarshaller for AutoScalingGroupConfiguration Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupConfigurationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#AutoScalingGroupConfiguration,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupConfigurationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupConfigurationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationOptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for AutoScalingGroupRecommendationOption Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationOptionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#AutoScalingGroupRecommendationOption,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationOptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationOptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationUnmarshaller">
+            <summary>
+            Response Unmarshaller for AutoScalingGroupRecommendation Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#AutoScalingGroupRecommendation,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.AutoScalingGroupRecommendationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.FilterMarshaller">
+            <summary>
+            Filter Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.FilterMarshaller.Marshall(Amazon.ComputeOptimizer.Model.Filter,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.FilterMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsRequestMarshaller">
+            <summary>
+            GetAutoScalingGroupRecommendations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetAutoScalingGroupRecommendations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetAutoScalingGroupRecommendationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsRequestMarshaller">
+            <summary>
+            GetEC2InstanceRecommendations Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetEC2InstanceRecommendations operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2InstanceRecommendationsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsRequestMarshaller">
+            <summary>
+            GetEC2RecommendationProjectedMetrics Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetEC2RecommendationProjectedMetrics operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEC2RecommendationProjectedMetricsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusRequestMarshaller">
+            <summary>
+            GetEnrollmentStatus Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.GetEnrollmentStatusRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetEnrollmentStatus operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetEnrollmentStatusResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationErrorUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetRecommendationError Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationErrorUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#GetRecommendationError,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationErrorUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationErrorUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesRequestMarshaller">
+            <summary>
+            GetRecommendationSummaries Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetRecommendationSummaries operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.GetRecommendationSummariesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationOptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for InstanceRecommendationOption Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationOptionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#InstanceRecommendationOption,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationOptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationOptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationUnmarshaller">
+            <summary>
+            Response Unmarshaller for InstanceRecommendation Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#InstanceRecommendation,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.InstanceRecommendationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.ProjectedMetricUnmarshaller">
+            <summary>
+            Response Unmarshaller for ProjectedMetric Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.ProjectedMetricUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#ProjectedMetric,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.ProjectedMetricUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.ProjectedMetricUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSourceUnmarshaller">
+            <summary>
+            Response Unmarshaller for RecommendationSource Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSourceUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#RecommendationSource,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSourceUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSourceUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for RecommendationSummary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#RecommendationSummary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendationSummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendedOptionProjectedMetricUnmarshaller">
+            <summary>
+            Response Unmarshaller for RecommendedOptionProjectedMetric Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendedOptionProjectedMetricUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#RecommendedOptionProjectedMetric,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendedOptionProjectedMetricUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.RecommendedOptionProjectedMetricUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.SummaryUnmarshaller">
+            <summary>
+            Response Unmarshaller for Summary Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.SummaryUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#Summary,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.SummaryUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.SummaryUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusRequestMarshaller">
+            <summary>
+            UpdateEnrollmentStatus Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusRequestMarshaller.Marshall(Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateEnrollmentStatus operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UpdateEnrollmentStatusResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UtilizationMetricUnmarshaller">
+            <summary>
+            Response Unmarshaller for UtilizationMetric Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UtilizationMetricUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#ComputeOptimizer#Model#UtilizationMetric,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UtilizationMetricUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Internal.MarshallTransformations.UtilizationMetricUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InvalidParameterValueException.#ctor(System.String)">
+            <summary>
+            Constructs a new InvalidParameterValueException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InvalidParameterValueException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InvalidParameterValueException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InvalidParameterValueException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InvalidParameterValueException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InvalidParameterValueException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidParameterValueException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.InvalidParameterValueException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InvalidParameterValueException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException.#ctor(System.String)">
+            <summary>
+            Constructs a new MissingAuthenticationTokenException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of MissingAuthenticationTokenException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of MissingAuthenticationTokenException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of MissingAuthenticationTokenException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of MissingAuthenticationTokenException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.OptInRequiredException.#ctor(System.String)">
+            <summary>
+            Constructs a new OptInRequiredException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.OptInRequiredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of OptInRequiredException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.OptInRequiredException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of OptInRequiredException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.OptInRequiredException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of OptInRequiredException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.OptInRequiredException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of OptInRequiredException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.ProjectedMetric">
+            <summary>
+            Describes a projected utilization metric of a recommendation option, such as an Amazon
+            EC2 instance.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.ProjectedMetric.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the projected utilization metric.
+            </para>
+             <note> 
+            <para>
+            Memory metrics are only returned for resources that have the unified CloudWatch agent
+            installed on them. For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html">Enabling
+            Memory Utilization with the CloudWatch Agent</a>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.ProjectedMetric.Timestamps">
+            <summary>
+            Gets and sets the property Timestamps. 
+            <para>
+            The time stamps of the projected utilization metric.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.ProjectedMetric.Values">
+            <summary>
+            Gets and sets the property Values. 
+            <para>
+            The values of the projected utilization metrics.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.RecommendationSource">
+            <summary>
+            Describes the source of a recommendation, such as an Amazon EC2 instance or Auto Scaling
+            group.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendationSource.RecommendationSourceArn">
+            <summary>
+            Gets and sets the property RecommendationSourceArn. 
+            <para>
+            The Amazon Resource Name (ARN) of the recommendation source.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendationSource.RecommendationSourceType">
+            <summary>
+            Gets and sets the property RecommendationSourceType. 
+            <para>
+            The resource type of the recommendation source.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.RecommendationSummary">
+            <summary>
+            A summary of a recommendation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendationSummary.AccountId">
+            <summary>
+            Gets and sets the property AccountId. 
+            <para>
+            The AWS account ID of the recommendation summary.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendationSummary.RecommendationResourceType">
+            <summary>
+            Gets and sets the property RecommendationResourceType. 
+            <para>
+            The resource type of the recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendationSummary.Summaries">
+            <summary>
+            Gets and sets the property Summaries. 
+            <para>
+            An array of objects that describe a recommendation summary.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.RecommendedOptionProjectedMetric">
+            <summary>
+            Describes a projected utilization metric of a recommendation option.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendedOptionProjectedMetric.ProjectedMetrics">
+            <summary>
+            Gets and sets the property ProjectedMetrics. 
+            <para>
+            An array of objects that describe a projected utilization metric.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendedOptionProjectedMetric.Rank">
+            <summary>
+            Gets and sets the property Rank. 
+            <para>
+            The rank of the recommendation option projected metric.
+            </para>
+             
+            <para>
+            The top recommendation option is ranked as <code>1</code>.
+            </para>
+             
+            <para>
+            The projected metric rank correlates to the recommendation option rank. For example,
+            the projected metric ranked as <code>1</code> is related to the recommendation option
+            that is also ranked as <code>1</code> in the same response.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.RecommendedOptionProjectedMetric.RecommendedInstanceType">
+            <summary>
+            Gets and sets the property RecommendedInstanceType. 
+            <para>
+            The recommended instance type.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ServiceUnavailableException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceUnavailableException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ServiceUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ServiceUnavailableException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ServiceUnavailableException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ServiceUnavailableException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceUnavailableException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.Summary">
+            <summary>
+            The summary of a recommendation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Summary.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The finding classification of the recommendation.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.Summary.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The value of the recommendation summary.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            <summary>
+             ComputeOptimizer exception
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest">
+            <summary>
+            Container for the parameters to the UpdateEnrollmentStatus operation.
+            Updates the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation can also enroll
+            member accounts within the organization.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest.IncludeMemberAccounts">
+            <summary>
+            Gets and sets the property IncludeMemberAccounts. 
+            <para>
+            Indicates whether to enroll member accounts within the organization, if the account
+            is a master account of an organization.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The new enrollment status of the account.
+            </para>
+             
+            <para>
+            Accepted options are <code>Active</code> or <code>Inactive</code>. You will get an
+            error if <code>Pending</code> or <code>Failed</code> are specified.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusResponse">
+            <summary>
+            This is the response object from the UpdateEnrollmentStatus operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusResponse.Status">
+            <summary>
+            Gets and sets the property Status. 
+            <para>
+            The enrollment status of the account.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusResponse.StatusReason">
+            <summary>
+            Gets and sets the property StatusReason. 
+            <para>
+            The reason for the enrollment status of the account. For example, an account might
+            show a status of <code>Pending</code> because member accounts of an organization require
+            more time to be enrolled in the service.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Model.UtilizationMetric">
+            <summary>
+            Describes a utilization metric of a resource, such as an Amazon EC2 instance.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UtilizationMetric.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the utilization metric.
+            </para>
+             <note> 
+            <para>
+            Memory metrics are only returned for resources that have the unified CloudWatch agent
+            installed on them. For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html">Enabling
+            Memory Utilization with the CloudWatch Agent</a>.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UtilizationMetric.Statistic">
+            <summary>
+            Gets and sets the property Statistic. 
+            <para>
+            The statistic of the utilization metric.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.Model.UtilizationMetric.Value">
+            <summary>
+            Gets and sets the property Value. 
+            <para>
+            The value of the utilization metric.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.AmazonComputeOptimizerRequest">
+            <summary>
+            Base class for ComputeOptimizer operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.FilterName">
+            <summary>
+            Constants used for properties of type FilterName.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.FilterName.Finding">
+            <summary>
+            Constant Finding for FilterName
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.FilterName.RecommendationSourceType">
+            <summary>
+            Constant RecommendationSourceType for FilterName
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.FilterName.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.FilterName.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.FilterName.op_Implicit(System.String)~Amazon.ComputeOptimizer.FilterName">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Finding">
+            <summary>
+            Constants used for properties of type Finding.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Finding.NotOptimized">
+            <summary>
+            Constant NotOptimized for Finding
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Finding.Optimized">
+            <summary>
+            Constant Optimized for Finding
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Finding.Overprovisioned">
+            <summary>
+            Constant Overprovisioned for Finding
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Finding.Underprovisioned">
+            <summary>
+            Constant Underprovisioned for Finding
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Finding.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Finding.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Finding.op_Implicit(System.String)~Amazon.ComputeOptimizer.Finding">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.MetricName">
+            <summary>
+            Constants used for properties of type MetricName.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.MetricName.Cpu">
+            <summary>
+            Constant Cpu for MetricName
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.MetricName.Memory">
+            <summary>
+            Constant Memory for MetricName
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricName.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricName.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricName.op_Implicit(System.String)~Amazon.ComputeOptimizer.MetricName">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.MetricStatistic">
+            <summary>
+            Constants used for properties of type MetricStatistic.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.MetricStatistic.Average">
+            <summary>
+            Constant Average for MetricStatistic
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.MetricStatistic.Maximum">
+            <summary>
+            Constant Maximum for MetricStatistic
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricStatistic.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricStatistic.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.MetricStatistic.op_Implicit(System.String)~Amazon.ComputeOptimizer.MetricStatistic">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.RecommendationSourceType">
+            <summary>
+            Constants used for properties of type RecommendationSourceType.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.RecommendationSourceType.AutoScalingGroup">
+            <summary>
+            Constant AutoScalingGroup for RecommendationSourceType
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.RecommendationSourceType.Ec2Instance">
+            <summary>
+            Constant Ec2Instance for RecommendationSourceType
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.RecommendationSourceType.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.RecommendationSourceType.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.RecommendationSourceType.op_Implicit(System.String)~Amazon.ComputeOptimizer.RecommendationSourceType">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.Status">
+            <summary>
+            Constants used for properties of type Status.
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Status.Active">
+            <summary>
+            Constant Active for Status
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Status.Failed">
+            <summary>
+            Constant Failed for Status
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Status.Inactive">
+            <summary>
+            Constant Inactive for Status
+            </summary>
+        </member>
+        <member name="F:Amazon.ComputeOptimizer.Status.Pending">
+            <summary>
+            Constant Pending for Status
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Status.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Status.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.Status.op_Implicit(System.String)~Amazon.ComputeOptimizer.Status">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient">
+             <summary>
+             Implementation for accessing ComputeOptimizer
+            
+             AWS Compute Optimizer is a service that analyzes the configuration and utilization
+             metrics of your AWS resources, such as EC2 instances and Auto Scaling groups. It reports
+             whether your resources are optimal, and generates optimization recommendations to
+             reduce the cost and improve the performance of your workloads. Compute Optimizer also
+             provides recent utilization metric data, as well as projected utilization metric data
+             for the recommendations, which you can use to evaluate which recommendation provides
+             the best price-performance trade-off. The analysis of your usage patterns can help
+             you decide when to move or resize your running resources, and still meet your performance
+             and capacity requirements. For more information about Compute Optimizer, see the <a
+             href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/">AWS Compute Optimizer
+             User Guide</a>.
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor">
+             <summary>
+             Constructs AmazonComputeOptimizerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonComputeOptimizerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig)">
+             <summary>
+             Constructs AmazonComputeOptimizerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonComputeOptimizerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Credentials and an
+            AmazonComputeOptimizerClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonComputeOptimizerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String,Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonComputeOptimizerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonComputeOptimizerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.#ctor(System.String,System.String,System.String,Amazon.ComputeOptimizer.AmazonComputeOptimizerConfig)">
+            <summary>
+            Constructs AmazonComputeOptimizerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonComputeOptimizerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonComputeOptimizerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.GetAutoScalingGroupRecommendationsAsync(Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns Auto Scaling group recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Auto Scaling groups
+            that are configured to run instances of the M, C, R, T, and X instance families. The
+            service does not generate recommendations for Auto Scaling groups that have a scaling
+            policy attached to them, or that do not have the same values for desired, minimum,
+            and maximum capacity. In order for Compute Optimizer to analyze your Auto Scaling
+            groups, they must be of a fixed size. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAutoScalingGroupRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetAutoScalingGroupRecommendations service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetAutoScalingGroupRecommendations">REST API Reference for GetAutoScalingGroupRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.GetEC2InstanceRecommendationsAsync(Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns Amazon EC2 instance recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Amazon Elastic Compute
+            Cloud (Amazon EC2) and Amazon EC2 Auto Scaling. It generates recommendations for M,
+            C, R, T, and X instance families. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEC2InstanceRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEC2InstanceRecommendations service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEC2InstanceRecommendations">REST API Reference for GetEC2InstanceRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.GetEC2RecommendationProjectedMetricsAsync(Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the projected utilization metrics of Amazon EC2 instance recommendations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEC2RecommendationProjectedMetrics service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEC2RecommendationProjectedMetrics service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEC2RecommendationProjectedMetrics">REST API Reference for GetEC2RecommendationProjectedMetrics Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.GetEnrollmentStatusAsync(Amazon.ComputeOptimizer.Model.GetEnrollmentStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation also confirms
+            the enrollment status of member accounts within the organization.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEnrollmentStatus service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEnrollmentStatus service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEnrollmentStatus">REST API Reference for GetEnrollmentStatus Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.GetRecommendationSummariesAsync(Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the optimization findings for an account.
+            
+             
+            <para>
+            For example, it returns the number of Amazon EC2 instances in an account that are
+            under-provisioned, over-provisioned, or optimized. It also returns the number of Auto
+            Scaling groups in an account that are not optimized, or optimized.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendationSummaries service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecommendationSummaries service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetRecommendationSummaries">REST API Reference for GetRecommendationSummaries Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.AmazonComputeOptimizerClient.UpdateEnrollmentStatusAsync(Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation can also enroll
+            member accounts within the organization.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateEnrollmentStatus service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateEnrollmentStatus service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/UpdateEnrollmentStatus">REST API Reference for UpdateEnrollmentStatus Operation</seealso>
+        </member>
+        <member name="T:Amazon.ComputeOptimizer.IAmazonComputeOptimizer">
+             <summary>
+             Interface for accessing ComputeOptimizer
+            
+             AWS Compute Optimizer is a service that analyzes the configuration and utilization
+             metrics of your AWS resources, such as EC2 instances and Auto Scaling groups. It reports
+             whether your resources are optimal, and generates optimization recommendations to
+             reduce the cost and improve the performance of your workloads. Compute Optimizer also
+             provides recent utilization metric data, as well as projected utilization metric data
+             for the recommendations, which you can use to evaluate which recommendation provides
+             the best price-performance trade-off. The analysis of your usage patterns can help
+             you decide when to move or resize your running resources, and still meet your performance
+             and capacity requirements. For more information about Compute Optimizer, see the <a
+             href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/">AWS Compute Optimizer
+             User Guide</a>.
+             </summary>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.GetAutoScalingGroupRecommendationsAsync(Amazon.ComputeOptimizer.Model.GetAutoScalingGroupRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns Auto Scaling group recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Auto Scaling groups
+            that are configured to run instances of the M, C, R, T, and X instance families. The
+            service does not generate recommendations for Auto Scaling groups that have a scaling
+            policy attached to them, or that do not have the same values for desired, minimum,
+            and maximum capacity. In order for Compute Optimizer to analyze your Auto Scaling
+            groups, they must be of a fixed size. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetAutoScalingGroupRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetAutoScalingGroupRecommendations service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetAutoScalingGroupRecommendations">REST API Reference for GetAutoScalingGroupRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.GetEC2InstanceRecommendationsAsync(Amazon.ComputeOptimizer.Model.GetEC2InstanceRecommendationsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns Amazon EC2 instance recommendations.
+            
+             
+            <para>
+            AWS Compute Optimizer currently generates recommendations for Amazon Elastic Compute
+            Cloud (Amazon EC2) and Amazon EC2 Auto Scaling. It generates recommendations for M,
+            C, R, T, and X instance families. For more information, see the <a href="https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is.html">AWS
+            Compute Optimizer User Guide</a>.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEC2InstanceRecommendations service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEC2InstanceRecommendations service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEC2InstanceRecommendations">REST API Reference for GetEC2InstanceRecommendations Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.GetEC2RecommendationProjectedMetricsAsync(Amazon.ComputeOptimizer.Model.GetEC2RecommendationProjectedMetricsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the projected utilization metrics of Amazon EC2 instance recommendations.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEC2RecommendationProjectedMetrics service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEC2RecommendationProjectedMetrics service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ResourceNotFoundException">
+            The specified resource was not found.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEC2RecommendationProjectedMetrics">REST API Reference for GetEC2RecommendationProjectedMetrics Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.GetEnrollmentStatusAsync(Amazon.ComputeOptimizer.Model.GetEnrollmentStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation also confirms
+            the enrollment status of member accounts within the organization.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetEnrollmentStatus service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetEnrollmentStatus service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetEnrollmentStatus">REST API Reference for GetEnrollmentStatus Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.GetRecommendationSummariesAsync(Amazon.ComputeOptimizer.Model.GetRecommendationSummariesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the optimization findings for an account.
+            
+             
+            <para>
+            For example, it returns the number of Amazon EC2 instances in an account that are
+            under-provisioned, over-provisioned, or optimized. It also returns the number of Auto
+            Scaling groups in an account that are not optimized, or optimized.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetRecommendationSummaries service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetRecommendationSummaries service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.OptInRequiredException">
+            You must opt in to the service to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetRecommendationSummaries">REST API Reference for GetRecommendationSummaries Operation</seealso>
+        </member>
+        <member name="M:Amazon.ComputeOptimizer.IAmazonComputeOptimizer.UpdateEnrollmentStatusAsync(Amazon.ComputeOptimizer.Model.UpdateEnrollmentStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates the enrollment (opt in) status of an account to the AWS Compute Optimizer
+            service.
+            
+             
+            <para>
+            If the account is a master account of an organization, this operation can also enroll
+            member accounts within the organization.
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateEnrollmentStatus service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateEnrollmentStatus service method, as returned by ComputeOptimizer.</returns>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.AccessDeniedException">
+            You do not have sufficient access to perform this action.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InternalServerException">
+            The request processing has failed because of an unknown error, exception, or failure.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.InvalidParameterValueException">
+            An invalid or out-of-range value was supplied for the input parameter.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.MissingAuthenticationTokenException">
+            The request must contain either a valid (registered) AWS access key ID or X.509 certificate.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ServiceUnavailableException">
+            The request has failed due to a temporary failure of the server.
+            </exception>
+            <exception cref="T:Amazon.ComputeOptimizer.Model.ThrottlingException">
+            The limit on the number of requests per second was exceeded.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/UpdateEnrollmentStatus">REST API Reference for UpdateEnrollmentStatus Operation</seealso>
+        </member>
+    </members>
+</doc>
