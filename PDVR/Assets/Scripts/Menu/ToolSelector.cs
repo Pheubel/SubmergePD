@@ -37,8 +37,9 @@ public class ToolSelector : MonoBehaviour
     {
         if (_activeTool == tool)
             return;
+        if (_activeTool != null)
+            _activeTool.SetActive(false);
 
-        _activeTool.SetActive(false);
         tool.SetActive(true);
         _activeTool = tool;
     }

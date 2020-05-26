@@ -61,7 +61,7 @@ public class ControllerMenu : MonoBehaviour
         return value;
     }
 
-    public void SetTouchPosition(SteamVR_Action_Vector2 fromAction, SteamVR_Input_Sources fromSource, Vector2 axis, Vector2 delta)
+    public void SetTouchPosition(Vector2 axis)
     {
         TouchPosition = axis;
     }

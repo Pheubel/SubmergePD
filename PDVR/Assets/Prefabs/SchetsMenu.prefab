@@ -1254,27 +1254,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sections:
   - _sectionObject: {fileID: 2471791994126019669}
-    _size: 0
+    _size: 27
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
   - _sectionObject: {fileID: 2253859110019735966}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
   - _sectionObject: {fileID: 8604060819598300143}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
   - _sectionObject: {fileID: 4710219815159746441}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
   _offsetDegree: 0
   _spacingDegree: 0
+  _hoverChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9187066287256187243
 GameObject:
   m_ObjectHideFlags: 0

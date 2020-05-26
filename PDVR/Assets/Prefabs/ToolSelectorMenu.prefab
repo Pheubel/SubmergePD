@@ -184,7 +184,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321134504294208002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sections:
   - _sectionObject: {fileID: 7708852374670085533}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -222,7 +222,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 1
   - _sectionObject: {fileID: 7440853488748930909}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -238,7 +238,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 1
   - _sectionObject: {fileID: 8729570754539144298}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -254,7 +254,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 1
   - _sectionObject: {fileID: 5704829206992311449}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -270,7 +270,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 1
   - _sectionObject: {fileID: 8416932542064338627}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -286,7 +286,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 1
   - _sectionObject: {fileID: 6431517878671017228}
-    _size: 0
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls:
@@ -301,8 +301,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 1
-  _offsetDegree: 0
-  _spacingDegree: 0
+  _offsetDegree: 112
+  _spacingDegree: 2
   _hoverChanged:
     m_PersistentCalls:
       m_Calls: []
