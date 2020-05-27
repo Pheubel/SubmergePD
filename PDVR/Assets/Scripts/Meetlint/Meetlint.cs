@@ -69,9 +69,29 @@ public class Meetlint : MonoBehaviour
         };
     }
 
-    public void UseMillimeters() => ActiveMeasureMode = MeasureMode.Millimeter;
-    public void UseCentimeters() => ActiveMeasureMode = MeasureMode.Centimeter;
-    public void UseMeters() => ActiveMeasureMode = MeasureMode.Meter;
+    public void UseMillimeters()
+    {
+        ActiveMeasureMode = MeasureMode.Millimeter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
+
+    public void UseCentimeters()
+    {
+        ActiveMeasureMode = MeasureMode.Centimeter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
+
+    public void UseMeters()
+    {
+        ActiveMeasureMode = MeasureMode.Meter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
 
     private void Start()
     {
