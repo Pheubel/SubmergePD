@@ -54,6 +54,8 @@ public class LoadImages : MonoBehaviour
     public GameObject imageFour;
     public GameObject imageFive;
 
+    public GameObject prefabImage;
+
 
     #region private members
 
@@ -302,6 +304,15 @@ public class LoadImages : MonoBehaviour
     {
         Panel_Photos.GetComponent<Canvas>().enabled = false;
         Panel_Models.GetComponent<Canvas>().enabled = true;
+    }
+
+    public void createObjectFromImage()
+    {
+        
+
+
+        GameObject picture = Instantiate(prefabImage, new Vector3((float)-4.774,(float)0.302, (float)3.844), Quaternion.identity);
+        picture.GetComponent<Renderer>().material.mainTexture = images[index];
     }
 
 
