@@ -60,10 +60,10 @@ public class Meetlint : MonoBehaviour
                 _textMesh.text = string.Format("Length: {0:0.###} meters", length * _scale);
                 break;
             case MeasureMode.Centimeter:
-                _textMesh.text = string.Format("Length: {0:0.#} centimeters", (length * _scale) / 100);
+                _textMesh.text = string.Format("Length: {0:0.#} centimeters", (length * _scale) * 100);
                 break;
             case MeasureMode.Millimeter:
-                _textMesh.text = string.Format("Length: {0:0.#} millimeters", (length * _scale) / 1000);
+                _textMesh.text = string.Format("Length: {0:0.#} millimeters", (length * _scale) * 1000);
                 break;
             default: throw new System.NotImplementedException();
         };
