@@ -13,12 +13,14 @@ public class MenuController : MonoBehaviour
     [SerializeField] ControllerMenu _magnifyMenu;
     [SerializeField] ControllerMenu _sketchMenu;
     [SerializeField] ControllerMenu _meassureMenu;
+    [SerializeField] ControllerMenu _recorderMenu;
     [SerializeField] ControllerMenu _databaseMenu;
 
     public void ActivateToolMenu() => ToggleMenu(_toolMenu);
     public void ActivateMagnifyMenu() => ToggleMenu(_magnifyMenu);
     public void ActivateSketchMenu() => ToggleMenu(_sketchMenu);
     public void ActivateMeassureMenu() => ToggleMenu(_meassureMenu);
+    public void ActivateRecorderMenu() => ToggleMenu(_recorderMenu);
     public void ActivateDatabaseMenu() => ToggleMenu(_databaseMenu);
 
     public void EnableActiveMenu() { 

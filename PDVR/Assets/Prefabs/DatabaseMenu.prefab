@@ -327,12 +327,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sections:
   - _sectionObject: {fileID: 7291611494729522029}
-    _size: 0
+    _size: 27
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
   - _sectionObject: {fileID: 6655372894540011410}
-    _size: 27
+    _size: 30
     _sectionSelected:
       m_PersistentCalls:
         m_Calls: []
