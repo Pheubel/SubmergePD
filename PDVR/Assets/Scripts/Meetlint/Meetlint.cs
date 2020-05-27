@@ -22,7 +22,7 @@ public class Meetlint : MonoBehaviour
     {
         if (_activated)
         {
-            _activeLine.SetEndPositionDirty(transform.position);
+            _activeLine.SetEndPositionDirty(_measurePoint.transform.position);
             SetLengthText(_activeLine.RawLengthDirty);
         }
     }
