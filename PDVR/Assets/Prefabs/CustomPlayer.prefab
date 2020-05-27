@@ -2294,6 +2294,16 @@ PrefabInstance:
       propertyPath: _sketchTool
       value: 
       objectReference: {fileID: 6116570302172600267}
+    - target: {fileID: 1658978008166609959, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _databaseTool
+      value: 
+      objectReference: {fileID: 6116570302172600267}
+    - target: {fileID: 1658978008166609959, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _filterTool
+      value: 
+      objectReference: {fileID: 6116570302172600267}
     - target: {fileID: 2412335993491807945, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: m_IsActive
@@ -2317,7 +2327,7 @@ PrefabInstance:
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}

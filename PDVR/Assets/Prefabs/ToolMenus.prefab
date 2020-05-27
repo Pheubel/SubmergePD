@@ -720,6 +720,11 @@ PrefabInstance:
       propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7433919462132522836}
+    - target: {fileID: 602491490399943762, guid: 1669427bab535f24ba34a32af667dcf5,
+        type: 3}
+      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateRecorderMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1669427bab535f24ba34a32af667dcf5, type: 3}
 --- !u!4 &3774028889702069665 stripped
