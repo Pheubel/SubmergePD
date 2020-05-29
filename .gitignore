@@ -420,3 +420,7 @@ PDVR/Builds/*
 
 !PDVR/Assets/*.meta
 !PDVR/Assets/**/*.meta
+
+
+!PDVR/Assets/*.obj
+!PDVR/Assets/**/*.obj
