@@ -424,3 +424,6 @@ PDVR/Builds/*
 
 !PDVR/Assets/*.obj
 !PDVR/Assets/**/*.obj
+
+!PDVR/Assets/AWSSDK/*.pdb
+!PDVR/Assets/AWSSDK/**/*.pdb
