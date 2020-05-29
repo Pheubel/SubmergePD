@@ -22,7 +22,7 @@ public class Meetlint : MonoBehaviour
     {
         if (_activated)
         {
-            _activeLine.SetEndPositionDirty(transform.position);
+            _activeLine.SetEndPositionDirty(_measurePoint.transform.position);
             SetLengthText(_activeLine.RawLengthDirty);
         }
     }
@@ -60,18 +60,38 @@ public class Meetlint : MonoBehaviour
                 _textMesh.text = string.Format("Length: {0:0.###} meters", length * _scale);
                 break;
             case MeasureMode.Centimeter:
-                _textMesh.text = string.Format("Length: {0:0.#} centimeters", (length * _scale) / 100);
+                _textMesh.text = string.Format("Length: {0:0.#} centimeters", (length * _scale) * 100);
                 break;
             case MeasureMode.Millimeter:
-                _textMesh.text = string.Format("Length: {0:0.#} millimeters", (length * _scale) / 1000);
+                _textMesh.text = string.Format("Length: {0:0.#} millimeters", (length * _scale) * 1000);
                 break;
             default: throw new System.NotImplementedException();
         };
     }
 
-    public void UseMillimeters() => ActiveMeasureMode = MeasureMode.Millimeter;
-    public void UseCentimeters() => ActiveMeasureMode = MeasureMode.Centimeter;
-    public void UseMeters() => ActiveMeasureMode = MeasureMode.Meter;
+    public void UseMillimeters()
+    {
+        ActiveMeasureMode = MeasureMode.Millimeter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
+
+    public void UseCentimeters()
+    {
+        ActiveMeasureMode = MeasureMode.Centimeter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
+
+    public void UseMeters()
+    {
+        ActiveMeasureMode = MeasureMode.Meter;
+
+        if (_activeLine != null)
+            SetLengthText(_activeLine.RawLengthDirty);
+    }
 
     private void Start()
     {
