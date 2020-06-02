@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private Teleport _teleport;
     [SerializeField] private SteamVR_Input_Sources _filterInput;
 
     [SerializeField] ControllerMenu _activeMenu;
@@ -23,14 +25,21 @@ public class MenuController : MonoBehaviour
     public void ActivateRecorderMenu() => ToggleMenu(_recorderMenu);
     public void ActivateDatabaseMenu() => ToggleMenu(_databaseMenu);
 
-    public void EnableActiveMenu() { 
-        if(_activeMenu != null)
-            _activeMenu.gameObject.SetActive(true); 
+    public void EnableActiveMenu()
+    {
+        if (_activeMenu == null)
+            return;
+
+        _teleport.enabled = false;
+        _activeMenu.gameObject.SetActive(true);
     }
     public void DisableActiveMenu()
     {
-        if (_activeMenu != null)
-            _activeMenu.gameObject.SetActive(false);
+        if (_activeMenu == null)
+            return;
+
+        _teleport.enabled = true;
+        _activeMenu.gameObject.SetActive(false);
     }
 
     private void ToggleMenu(ControllerMenu menu)
@@ -50,7 +59,7 @@ public class MenuController : MonoBehaviour
         if (fromSource != _filterInput)
             return;
 
-        if(_activeMenu != null)
+        if (_activeMenu != null)
             _activeMenu.SetTouchPosition(axis);
     }
 
