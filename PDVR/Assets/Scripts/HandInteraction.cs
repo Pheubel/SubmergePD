@@ -6,7 +6,8 @@ using Valve.VR;
 public class HandInteraction : MonoBehaviour
 {
 
-    public SteamVR_Action_Boolean m_GrabAction = null;
+    // public SteamVR_Action_Boolean m_GrabAction = null;
+    public SteamVR_Action_Single m_GrabAction = null;
 
     private SteamVR_Behaviour_Pose m_Pose = null;
     private FixedJoint m_Joint = null;
@@ -114,13 +115,13 @@ public class HandInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (m_GrabAction.GetStateDown(m_Pose.inputSource))
+        if (m_GrabAction.GetAxis(m_Pose.inputSource) >0)
         {
             print(m_Pose.inputSource + "Trigger Down");
             Pickup();
         }
 
-        if (m_GrabAction.GetStateUp(m_Pose.inputSource))
+        if (m_GrabAction.GetAxis(m_Pose.inputSource) == 0)
         {
             print(m_Pose.inputSource + "Trigger Up");
             Drop();
