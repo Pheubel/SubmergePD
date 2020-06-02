@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 1320760699518757642}
   - component: {fileID: 485004360491793735}
   - component: {fileID: 1227016958306172690}
+  - component: {fileID: 8109013846469925381}
   m_Layer: 0
   m_Name: Groen_button
   m_TagString: Untagged
@@ -299,6 +300,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8109013846469925381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253859110019735966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &2304151639303376089
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +354,7 @@ GameObject:
   - component: {fileID: 3174948032424633800}
   - component: {fileID: 1322437778125798576}
   - component: {fileID: 9080546771534064990}
+  - component: {fileID: 4876376536302002817}
   m_Layer: 0
   m_Name: terugbutton2
   m_TagString: Untagged
@@ -408,6 +423,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4876376536302002817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471791994126019669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &2665291369435078916
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +639,7 @@ GameObject:
   - component: {fileID: 4206592208962763065}
   - component: {fileID: 4667985444890151313}
   - component: {fileID: 2284689634005087036}
+  - component: {fileID: 3784615719950244060}
   m_Layer: 0
   m_Name: paars_button
   m_TagString: Untagged
@@ -679,6 +708,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3784615719950244060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710219815159746441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &4963692645244295965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1101,7 @@ GameObject:
   - component: {fileID: 5388497929946289298}
   - component: {fileID: 4050415559671253800}
   - component: {fileID: 2723113036564600831}
+  - component: {fileID: 1265310777939035680}
   m_Layer: 0
   m_Name: Rood_button
   m_TagString: Untagged
@@ -1127,6 +1170,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1265310777939035680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604060819598300143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &8779073566571716088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1333,51 @@ MonoBehaviour:
   _spacingDegree: 0
   _hoverChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8109013846469925381}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3784615719950244060}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1265310777939035680}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4876376536302002817}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9187066287256187243
 GameObject:
   m_ObjectHideFlags: 0

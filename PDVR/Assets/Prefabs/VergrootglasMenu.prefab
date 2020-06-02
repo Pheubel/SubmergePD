@@ -516,6 +516,7 @@ GameObject:
   - component: {fileID: 4276653278201165685}
   - component: {fileID: 8802370352922756221}
   - component: {fileID: 3700307758774056632}
+  - component: {fileID: 1724566274607947579}
   m_Layer: 0
   m_Name: terugbutton
   m_TagString: Untagged
@@ -584,6 +585,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1724566274607947579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481504105928066833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &2927630653680724961
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +609,7 @@ GameObject:
   - component: {fileID: 6712704030719433675}
   - component: {fileID: 8677208543823313523}
   - component: {fileID: 3866042505457499153}
+  - component: {fileID: 463186106692316812}
   m_Layer: 0
   m_Name: zoom2button
   m_TagString: Untagged
@@ -663,6 +678,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &463186106692316812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927630653680724961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &3435183891580745135
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +792,7 @@ GameObject:
   - component: {fileID: 3216854231770281186}
   - component: {fileID: 4651091556641951846}
   - component: {fileID: 3203085928257365795}
+  - component: {fileID: 216694970229364059}
   m_Layer: 0
   m_Name: zoom1_5button
   m_TagString: Untagged
@@ -832,6 +861,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &216694970229364059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314531239017668527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &4629174190938911222
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +915,7 @@ GameObject:
   - component: {fileID: 6532447560598412335}
   - component: {fileID: 132868319480869395}
   - component: {fileID: 8656174344286999182}
+  - component: {fileID: 8871511947597173897}
   m_Layer: 0
   m_Name: zoom4button
   m_TagString: Untagged
@@ -941,6 +984,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8871511947597173897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411392147121621079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &6447594448314156197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,4 +1363,48 @@ MonoBehaviour:
   _spacingDegree: 4
   _hoverChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1724566274607947579}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 216694970229364059}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 463186106692316812}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8871511947597173897}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

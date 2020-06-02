@@ -28,7 +28,7 @@ public class ControllerMenu : MonoBehaviour
 
         var section = GetSection(rotation);
 
-        if(SelectedSection != section)
+        if (SelectedSection != section)
         {
             SelectedSection = section;
             _hoverChanged?.Invoke(section);

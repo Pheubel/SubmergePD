@@ -350,7 +350,51 @@ MonoBehaviour:
   _spacingDegree: 4
   _hoverChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 603971736690058630}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5505293279759244198}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6827126487190606636}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4673811214022431904}
+        m_MethodName: HandleSectionChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4684667983753683299
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +752,7 @@ GameObject:
   - component: {fileID: 9054921056485605338}
   - component: {fileID: 6659044792319672954}
   - component: {fileID: 5819171273250168271}
+  - component: {fileID: 603971736690058630}
   m_Layer: 0
   m_Name: Groot_button
   m_TagString: Untagged
@@ -776,6 +821,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &603971736690058630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6116857346256028481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &6655372894540011410
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +845,7 @@ GameObject:
   - component: {fileID: 7276572155007312763}
   - component: {fileID: 5299920208550204432}
   - component: {fileID: 5167948691684262687}
+  - component: {fileID: 5505293279759244198}
   m_Layer: 0
   m_Name: Klein_button
   m_TagString: Untagged
@@ -855,6 +914,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5505293279759244198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655372894540011410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &7015113965234317616
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +968,7 @@ GameObject:
   - component: {fileID: 6687062396221617798}
   - component: {fileID: 6233049860268651459}
   - component: {fileID: 5609634147176491340}
+  - component: {fileID: 4673811214022431904}
   m_Layer: 0
   m_Name: terugbutton1
   m_TagString: Untagged
@@ -964,6 +1037,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4673811214022431904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291611494729522029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &7838984265974628687
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +1061,7 @@ GameObject:
   - component: {fileID: 8752082358873100270}
   - component: {fileID: 4857173663317380549}
   - component: {fileID: 3703155901505755192}
+  - component: {fileID: 6827126487190606636}
   m_Layer: 0
   m_Name: Middel_button
   m_TagString: Untagged
@@ -1043,6 +1130,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6827126487190606636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7838984265974628687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3411bd58d019424299c11b4ca1348c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightMaterial: {fileID: 2100000, guid: 44b9e268ba8b3d24e99a28b21ec2c358, type: 2}
 --- !u!1 &8172380573321003486
 GameObject:
   m_ObjectHideFlags: 0

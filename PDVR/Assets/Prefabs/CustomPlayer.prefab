@@ -2196,6 +2196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
       propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -2269,6 +2274,61 @@ PrefabInstance:
       propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1658978008166609959, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: _default
@@ -2309,6 +2369,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3763711735894206462, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: m_IsActive
@@ -2316,92 +2406,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
-      objectReference: {fileID: 2361267932889929132}
+      objectReference: {fileID: 8550019919399681819}
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ActivateRecordTool
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: Vibrate
       objectReference: {fileID: 0}
     - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
-      propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2361267932889929132}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ActivateDatabaseTool
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[4]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2361267932889929132}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ActivateFilterTool
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
-        type: 3}
-      propertyPath: _sections.Array.data[5]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4781805101138730944, guid: 32cdc54facac1c94a984085e572a51f9,
@@ -2418,6 +2448,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -2444,6 +2479,31 @@ PrefabInstance:
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6994757032136189845, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: m_IsActive
@@ -2453,6 +2513,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _filterInput
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7590190573736534148, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -3034,6 +3124,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -3132,10 +3227,40 @@ PrefabInstance:
       propertyPath: _sections.Array.data[3]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 123096476249781028, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -3160,6 +3285,31 @@ PrefabInstance:
     - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230550942660940763, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1658978008166609959, guid: 32cdc54facac1c94a984085e572a51f9,
@@ -3209,6 +3359,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -3232,10 +3387,65 @@ PrefabInstance:
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600593694766620613, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3763711735894206462, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040853739867294126, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4781805101138730944, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -3251,6 +3461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -3277,6 +3492,31 @@ PrefabInstance:
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492128653337820634, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6994757032136189845, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: m_IsActive
@@ -3291,6 +3531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
@@ -3315,6 +3560,31 @@ PrefabInstance:
     - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
         type: 3}
       propertyPath: _sections.Array.data[0]._sectionSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8550019919399681819}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Vibrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584259645202206321, guid: 32cdc54facac1c94a984085e572a51f9,
+        type: 3}
+      propertyPath: _hoverChanged.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7590190573736534148, guid: 32cdc54facac1c94a984085e572a51f9,
