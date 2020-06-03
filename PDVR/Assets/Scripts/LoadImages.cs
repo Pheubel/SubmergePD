@@ -55,6 +55,7 @@ public class LoadImages : MonoBehaviour
     public GameObject imageFive;
 
     public GameObject prefabImage;
+    public GameObject controller;
 
 
     #region private members
@@ -306,13 +307,37 @@ public class LoadImages : MonoBehaviour
         Panel_Models.GetComponent<Canvas>().enabled = true;
     }
 
-    public void createObjectFromImage()
+    public void createObjectFromImage(int indexNumber)
     {
+        int selection =0;
+        switch (indexNumber)
+            
+        {
+            case 0:
+                selection = index;
+                break;
+
+            case 1:
+                selection = index1;
+                break;
+
+            case 2:
+                selection = index2;
+                break;
+
+            case 3:
+                selection = index3;
+                break;
+
+            case 4:
+                selection = index4;
+                break;
+        }
+
         
-
-
-        GameObject picture = Instantiate(prefabImage, new Vector3((float)-4.774,(float)0.302, (float)3.844), Quaternion.identity);
-        picture.GetComponent<Renderer>().material.mainTexture = images[index];
+        GameObject picture = Instantiate(prefabImage, controller.transform.position, Quaternion.identity);
+        picture.GetComponent<Interactable>().m_ActiveHand = controller.GetComponent<HandInteraction>();
+        picture.GetComponent<Renderer>().material.mainTexture = images[selection];
     }
 
 
