@@ -6,7 +6,6 @@ using Valve.VR.InteractionSystem;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField] private Teleport _teleport;
     [SerializeField] private SteamVR_Input_Sources _filterInput;
 
     [SerializeField] ControllerMenu _activeMenu;
@@ -30,7 +29,7 @@ public class MenuController : MonoBehaviour
         if (_activeMenu == null)
             return;
 
-        _teleport.enabled = false;
+        Teleport.instance.enabled = false;
         _activeMenu.gameObject.SetActive(true);
     }
     public void DisableActiveMenu()
@@ -38,7 +37,7 @@ public class MenuController : MonoBehaviour
         if (_activeMenu == null)
             return;
 
-        _teleport.enabled = true;
+        Teleport.instance.enabled = true;
         _activeMenu.gameObject.SetActive(false);
     }
 
