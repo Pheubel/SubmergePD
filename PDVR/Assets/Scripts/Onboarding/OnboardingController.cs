@@ -4,12 +4,16 @@ using UnityEngine.Video;
 public class OnboardingController : MonoBehaviour
 {
     [SerializeField] OnboardingStep _progres;
+    [SerializeField] AudioClip _stepCompleteClip;
 
     [SerializeField] private VideoPlayer[] _videoPlayers;
+    [SerializeField] private AudioSource _audioSource;
 
     [Header("Videos")]
     [SerializeField] VideoClip _teleportClip;
     [SerializeField] VideoClip _sphereSelect;
+    [SerializeField] VideoClip _speachRecording;
+    [SerializeField] VideoClip _moveAudioBubble;
 
     public void Start()
     {
@@ -18,11 +22,35 @@ public class OnboardingController : MonoBehaviour
 
     public void HandleTeleported()
     {
-        if (_progres != OnboardingStep.Start)
+        if (_progres != OnboardingStep.Teleport)
             return;
 
-        _progres = OnboardingStep.HasTeleported;
+        _progres = OnboardingStep.SelectSphere;
         ChangeClip(_sphereSelect);
+
+        _audioSource.PlayOneShot(_stepCompleteClip);
+    }
+
+    public void HandleSphereSeleted()
+    {
+        if (_progres != OnboardingStep.SelectSphere)
+            return;
+
+        _progres = OnboardingStep.RecordAudio;
+        ChangeClip(_speachRecording);
+
+        _audioSource.PlayOneShot(_stepCompleteClip);
+    }
+
+    public void HandeAudioRecorded()
+    {
+        if (_progres != OnboardingStep.RecordAudio)
+            return;
+
+        _progres = OnboardingStep.MoveAudioBubble;
+        ChangeClip(_moveAudioBubble);
+
+        _audioSource.PlayOneShot(_stepCompleteClip);
     }
 
     public void ChangeClip(VideoClip clip)
@@ -35,7 +63,10 @@ public class OnboardingController : MonoBehaviour
 
     public enum OnboardingStep
     {
-        Start = 0,
-        HasTeleported = 1
+        Teleport,
+        SelectSphere,
+        RecordAudio,
+        MoveAudioBubble,
+        Completed
     }
 }
