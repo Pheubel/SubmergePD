@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using Valve.VR;
 
 public class AudioToolController : MonoBehaviour
@@ -8,6 +9,9 @@ public class AudioToolController : MonoBehaviour
     [Header("Input")]
     [SerializeField] SteamVR_Action_Boolean _recordAction;
     [SerializeField] SteamVR_Input_Sources _inputSource;
+
+    [Header("Events")]
+    [SerializeField] UnityEvent _audioRecorded;
 
     MicrophoneRecorder _recorder;
 
@@ -50,6 +54,8 @@ public class AudioToolController : MonoBehaviour
 
         data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
         newBubble.Initialize(data);
+
+        _audioRecorded?.Invoke();
     }
 
     //private void OnDestroy()

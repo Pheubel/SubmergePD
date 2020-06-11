@@ -15,6 +15,10 @@ public class OnboardingController : MonoBehaviour
     [SerializeField] VideoClip _speachRecording;
     [SerializeField] VideoClip _moveAudioBubble;
 
+    [Header("Sin Spheres")]
+    [SerializeField] GameObject _closedSphere;
+    [SerializeField] GameObject _openSphere;
+
     public void Start()
     {
         ChangeClip(_teleportClip);
@@ -29,6 +33,7 @@ public class OnboardingController : MonoBehaviour
         ChangeClip(_sphereSelect);
 
         _audioSource.PlayOneShot(_stepCompleteClip);
+        _closedSphere.SetActive(true);
     }
 
     public void HandleSphereSeleted()
@@ -40,6 +45,8 @@ public class OnboardingController : MonoBehaviour
         ChangeClip(_speachRecording);
 
         _audioSource.PlayOneShot(_stepCompleteClip);
+
+        Destroy(_openSphere, 5);
     }
 
     public void HandeAudioRecorded()
@@ -48,6 +55,17 @@ public class OnboardingController : MonoBehaviour
             return;
 
         _progres = OnboardingStep.MoveAudioBubble;
+        ChangeClip(_moveAudioBubble);
+
+        _audioSource.PlayOneShot(_stepCompleteClip);
+    }
+
+    public void HandleAudioMoved()
+    {
+        if (_progres != OnboardingStep.MoveAudioBubble)
+            return;
+
+        _progres = OnboardingStep.Completed;
         ChangeClip(_moveAudioBubble);
 
         _audioSource.PlayOneShot(_stepCompleteClip);
