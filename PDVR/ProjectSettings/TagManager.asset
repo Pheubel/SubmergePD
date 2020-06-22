@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - screen
+  - cue_image
+  - filterscreen
   layers:
   - Default
   - TransparentFX

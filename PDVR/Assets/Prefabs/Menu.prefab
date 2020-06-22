@@ -3375,7 +3375,7 @@ GameObject:
   - component: {fileID: 9199529675327536007}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: screen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4543,11 +4543,6 @@ MonoBehaviour:
   S3Region: eu-west-1
   S3BucketName: pdvr-media
   index: 0
-  bhvs: []
-  dates: []
-  sins: []
-  addresses: []
-  images: []
   bhvText: {fileID: 9199529675809690168}
   dateText: {fileID: 9199529675178159245}
   sinText: {fileID: 9199529674860873177}
@@ -4563,6 +4558,7 @@ MonoBehaviour:
   prefabImage: {fileID: 5071785005337646666, guid: 589175faa743aef4fb4503614e16c3fd,
     type: 3}
   controller: {fileID: 0}
+  NetworkManager: {fileID: 0}
 --- !u!1 &9199529676774171463
 GameObject:
   m_ObjectHideFlags: 0

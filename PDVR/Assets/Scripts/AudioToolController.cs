@@ -1,17 +1,13 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
 using Valve.VR;
 
 public class AudioToolController : MonoBehaviour
 {
-    [SerializeField] AudioBubbleController _bubblePrefab;
+    [SerializeField] GameObject _bubblePrefab;
     [SerializeField] Transform _handLocation;
     [Header("Input")]
     [SerializeField] SteamVR_Action_Boolean _recordAction;
     [SerializeField] SteamVR_Input_Sources _inputSource;
-
-    [Header("Events")]
-    [SerializeField] UnityEvent _audioRecorded;
 
     MicrophoneRecorder _recorder;
 
@@ -48,14 +44,15 @@ public class AudioToolController : MonoBehaviour
     public void HandleClipRecorded(AudioClip clip)
     {
         var newBubble = Instantiate(_bubblePrefab,_handLocation.position,_handLocation.rotation);
+        newBubble.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
         var data = ScriptableObject.CreateInstance<AudioData>();
 
         var fileLocation = "file:///" + Utilities.SavWav.Save($"{clip.name}.wav", clip, true);
 
         data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
-        newBubble.Initialize(data);
-
-        _audioRecorded?.Invoke();
+        newBubble.GetComponentInChildren<AudioBubble>().Initialize(data);
+        Audio_cue bubbleData = newBubble.GetComponentInChildren<Audio_cue>();
+        bubbleData.userName.text = ActiveUser.officer != null ? (ActiveUser.officer.first_name + " " + ActiveUser.officer.last_name) : "Onbekende Agent";
     }
 
     //private void OnDestroy()

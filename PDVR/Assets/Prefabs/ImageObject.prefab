@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 5071785005337646668}
   - component: {fileID: 5071785005337646667}
   - component: {fileID: 370166758139750902}
+  - component: {fileID: 1681887992423853018}
+  - component: {fileID: 6715432697063644936}
   m_Layer: 0
   m_Name: ImageObject
   m_TagString: Interactable
@@ -139,8 +141,41 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3, z: 0.03}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.9718261, y: 0.992525, z: 0.03}
+  m_Center: {x: -0.0046414733, y: 0.0073419213, z: 0}
+--- !u!114 &1681887992423853018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071785005337646666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a13d6117e92bc4d9d3f9037f62a2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - cue_image
+--- !u!114 &6715432697063644936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5071785005337646666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e6fe83f396dec41b1420ea6294c469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: 
+  id: 0
+  workspace: 0
+  vector_x: 0
+  vector_y: 0
+  vector_z: 0
+  photo: 
 --- !u!1001 &8420813889910229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,7 +287,7 @@ PrefabInstance:
     - target: {fileID: 3080364772913382324, guid: b00ea36e8767f1a4f9dbcf46e963a8b0,
         type: 3}
       propertyPath: _activated.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3080364772913382324, guid: b00ea36e8767f1a4f9dbcf46e963a8b0,
         type: 3}
