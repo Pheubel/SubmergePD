@@ -38,11 +38,23 @@ public class ToolSelector : MonoBehaviour
     {
         if (tool.tag == "screen")
         {
+            var cameraTransform = Camera.main.gameObject.transform;
             tool.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
             tool.transform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
+            tool.transform.LookAt(cameraTransform);
             tool.SetActive(true);
 
         }
+
+        if (tool.tag =="filterscreen")
+        {
+            var cameraTransform = Camera.main.gameObject.transform;
+            tool.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
+            tool.transform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
+            tool.transform.LookAt(cameraTransform);
+            tool.SetActive(true);
+        }
+
         else
         {
             if (_activeTool == tool)

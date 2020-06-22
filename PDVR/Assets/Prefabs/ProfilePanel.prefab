@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 5971453425561850402}
   - component: {fileID: 7929586340238851831}
   - component: {fileID: 7064817046369133795}
+  - component: {fileID: 2665323046992066306}
   m_Layer: 5
   m_Name: ProfilePanel
   m_TagString: Untagged
@@ -486,6 +487,8 @@ MonoBehaviour:
   last_nameText: {fileID: 8637480400237347388}
   temp_idText: {fileID: 4353416367797972674}
   officer: {fileID: 0}
+  NetworkManager: {fileID: 0}
+  active: 0
 --- !u!114 &7064817046369133795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +515,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &2665323046992066306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869213870148992904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2000, y: 400, z: 40}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7769163104233250696
 GameObject:
   m_ObjectHideFlags: 0

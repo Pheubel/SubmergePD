@@ -44,14 +44,15 @@ public class AudioToolController : MonoBehaviour
     public void HandleClipRecorded(AudioClip clip)
     {
         var newBubble = Instantiate(_bubblePrefab,_handLocation.position,_handLocation.rotation);
+        newBubble.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
         var data = ScriptableObject.CreateInstance<AudioData>();
 
         var fileLocation = "file:///" + Utilities.SavWav.Save($"{clip.name}.wav", clip, true);
 
         data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
-        newBubble.GetComponent<AudioBubble>().Initialize(data);
-        Audio_cue bubbleData = newBubble.GetComponent<Audio_cue>();
-        bubbleData = new Audio_cue(ActiveUser.officer, "[Spreek Titel In]", 0, 0, _handLocation.position.x, _handLocation.position.y, _handLocation.position.z, "Placeholder");
+        newBubble.GetComponentInChildren<AudioBubble>().Initialize(data);
+        Audio_cue bubbleData = newBubble.GetComponentInChildren<Audio_cue>();
+        bubbleData.userName.text = (ActiveUser.officer.first_name + " " + ActiveUser.officer.last_name);
     }
 
     //private void OnDestroy()

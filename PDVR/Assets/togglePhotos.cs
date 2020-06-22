@@ -23,7 +23,7 @@ public class togglePhotos : MonoBehaviour
                 {
                     if (tag.HasTag("image"))
                     {
-                        o.SetActive(false);
+                        o.GetComponent<MeshRenderer>().enabled = false;
                     }
 
 
@@ -43,7 +43,7 @@ public class togglePhotos : MonoBehaviour
                 {
                     if (tag.HasTag("image"))
                     {
-                        o.SetActive(true);
+                        o.GetComponent<MeshRenderer>().enabled = true;
                     }
 
 

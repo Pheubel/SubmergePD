@@ -169,7 +169,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e6fe83f396dec41b1420ea6294c469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 
+  owner: 
+  id: 0
+  workspace: 0
+  vector_x: 0
+  vector_y: 0
+  vector_z: 0
+  photo: 
 --- !u!1001 &8420813889910229
 PrefabInstance:
   m_ObjectHideFlags: 0

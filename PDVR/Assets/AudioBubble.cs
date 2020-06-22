@@ -24,7 +24,7 @@ public class AudioBubble : MonoBehaviour
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        slider.maxValue = _audioSource.clip.length;
+        
     }
 
     public void PlayAudio(AudioClip clip, float point = 0)
@@ -40,6 +40,7 @@ public class AudioBubble : MonoBehaviour
         _startRotation = new Quaternion();
         _recording = data;
         _audioSource.clip = data.Clip;
+        slider.maxValue = _audioSource.clip.length;
     }
 
     public void setTime(float time)
