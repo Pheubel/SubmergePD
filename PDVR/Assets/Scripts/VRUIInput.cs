@@ -40,6 +40,9 @@ public class VRUIInput : MonoBehaviour
 
     private void HandlePointerClick(object sender, PointerEventArgs e)
     {
+        if (e.target == null)
+            return;
+
         // clicked object
         if (e.target.TryGetComponent<LaserPointerInteractable>(out var interactable))
             interactable.TriggerInteractable();

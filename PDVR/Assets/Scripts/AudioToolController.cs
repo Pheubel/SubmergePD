@@ -52,7 +52,7 @@ public class AudioToolController : MonoBehaviour
         data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
         newBubble.GetComponentInChildren<AudioBubble>().Initialize(data);
         Audio_cue bubbleData = newBubble.GetComponentInChildren<Audio_cue>();
-        bubbleData.userName.text = (ActiveUser.officer.first_name + " " + ActiveUser.officer.last_name);
+        bubbleData.userName.text = ActiveUser.officer != null ? (ActiveUser.officer.first_name + " " + ActiveUser.officer.last_name) : "Onbekende Agent";
     }
 
     //private void OnDestroy()

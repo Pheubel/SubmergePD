@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2a5f7da3debd7439559da1f479cd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bubblePrefab: {fileID: 2400637209253173563, guid: b4dd4f4bd5e21df47aa50507f8840487,
+  _bubblePrefab: {fileID: 5556034120929637137, guid: 28ee8e06f0a65bd4190721447abafc6c,
     type: 3}
   _handLocation: {fileID: 0}
   _recordAction:

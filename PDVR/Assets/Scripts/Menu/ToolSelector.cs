@@ -36,18 +36,26 @@ public class ToolSelector : MonoBehaviour
 
     private void ToggleTool(GameObject tool)
     {
-        if (tool.tag == "screen")
+        if (tool.CompareTag("screen"))
         {
+            if (_filterTool.gameObject.activeSelf)
+                _filterTool.gameObject.SetActive(false);
+
             var cameraTransform = Camera.main.gameObject.transform;
-            tool.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
-            tool.transform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
-            tool.transform.LookAt(cameraTransform);
+            var toolTransform = tool.transform;
+            toolTransform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
+            toolTransform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
+            toolTransform.LookAt(cameraTransform);
+            toolTransform.rotation.Set(toolTransform.rotation.x, -toolTransform.rotation.y, toolTransform.rotation.z, toolTransform.rotation.w);
             tool.SetActive(true);
 
         }
 
-        if (tool.tag =="filterscreen")
+        else if (tool.CompareTag("filterscreen"))
         {
+            if (_databaseTool.gameObject.activeSelf)
+                _databaseTool.gameObject.SetActive(false);
+
             var cameraTransform = Camera.main.gameObject.transform;
             tool.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
             tool.transform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
@@ -58,8 +66,14 @@ public class ToolSelector : MonoBehaviour
         else
         {
             if (_activeTool == tool)
-            return;
-        if (_activeTool != null)
+                return;
+
+            if (_filterTool.gameObject.activeSelf)
+                _filterTool.gameObject.SetActive(false);
+            if (_databaseTool.gameObject.activeSelf)
+                _databaseTool.gameObject.SetActive(false);
+
+            if (_activeTool != null)
                 _activeTool.SetActive(false);
 
             tool.SetActive(true);
