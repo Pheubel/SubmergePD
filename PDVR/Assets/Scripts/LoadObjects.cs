@@ -37,6 +37,7 @@ public class LoadObjects : MonoBehaviour
     public Canvas Panel_Models;
 
 
+
     #region private members
 
     private IAmazonS3 _s3Client;
@@ -89,7 +90,6 @@ public class LoadObjects : MonoBehaviour
             using (Stream responseStream = response.ResponseStream)
             {
 
-                byte[] data = null;
                 if (response.ResponseStream != null)
                 {
 

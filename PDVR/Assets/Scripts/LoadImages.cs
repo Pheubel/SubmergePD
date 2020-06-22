@@ -32,11 +32,7 @@ public class LoadImages : MonoBehaviour
 
     public string S3BucketName = null;
     public int index = 0;
-    public List<String> bhvs;
-    public List<String> dates;
-    public List<String> sins;
-    public List<String> addresses;
-    public List<Texture> images;
+    public static List<DbImage> imageList = new List<DbImage>();
 
     public GameObject bhvText;
     public GameObject dateText;
@@ -57,6 +53,7 @@ public class LoadImages : MonoBehaviour
     public GameObject prefabImage;
     public GameObject controller;
 
+    public GameObject NetworkManager;
 
     #region private members
 
@@ -94,6 +91,26 @@ public class LoadImages : MonoBehaviour
     private int index4 = 4;
     #endregion
 
+     public class DbImage
+    {
+        public string bhv;
+        public string date;
+        public string sin;
+        public string address;
+        public string databaseID;
+        public Texture texture;
+        public DbImage(string bhv, string date, string sin, string address, Texture texture)
+        {
+            this.bhv = bhv;
+            this.date = date;
+            this.sin = sin;
+            this.address = address;
+            this.texture = texture;
+            
+        }
+
+       
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -136,20 +153,20 @@ public class LoadImages : MonoBehaviour
                     stream.Position = 0;
 
                     data = stream.ToArray();
-                    images.Add(bytesToTexture2D(data));
 
 
 
                     string title = response.Metadata["x-amz-meta-sin"]; // Assume you have "title" as medata added to the object.
-                    bhvs.Add(response.Metadata["x-amz-meta-bhv"]);
-                    dates.Add(response.Metadata["x-amz-meta-date"]);
-                    sins.Add(response.Metadata["x-amz-meta-sin"]);
-                    addresses.Add(response.Metadata["x-amz-meta-address"]);
                     string contentType = response.Headers["Content-Type"];
 
-                    Debug.Log("Object metadata, Title: {0} " + title);
-                    Debug.Log("Content type: {0} " + contentType);
+                    string bhv = response.Metadata["x-amz-meta-bhv"];
+                    string date = response.Metadata["x-amz-meta-date"];
+                    string sin = response.Metadata["x-amz-meta-sin"];
+                    string address =response.Metadata["x-amz-meta-address"];
+                    Texture texture = bytesToTexture2D(data);
 
+                    Debug.Log(sin);
+                    imageList.Add(new DbImage(bhv,date,sin,address, texture));
 
 
                 }
@@ -216,27 +233,27 @@ public class LoadImages : MonoBehaviour
 
     private async Task initializeListAsync()
     {
-        await Task.Delay(2500);
+        await Task.Delay(3500);
         RawImage image0 = imageMain.GetComponent<RawImage>();
-        image0.texture = images[0];
+        image0.texture = imageList[0].texture;
 
-        bhvText.GetComponent<Text>().text = bhvs[0];
-        sinText.GetComponent<Text>().text = sins[0];
-        addressText.GetComponent<Text>().text = addresses[0];
-        dateText.GetComponent<Text>().text = dates[0];
+        bhvText.GetComponent<Text>().text = imageList[0].bhv;
+        sinText.GetComponent<Text>().text = imageList[0].sin;
+        addressText.GetComponent<Text>().text = imageList[0].address;
+        dateText.GetComponent<Text>().text = imageList[0].date;
 
 
 
         RawImage image1 = imageOne.GetComponent<RawImage>();
-        image1.texture = images[0];
+        image1.texture = imageList[0].texture;
         RawImage image2 = imageTwo.GetComponent<RawImage>();
-        image2.texture = images[1];
+        image2.texture = imageList[1].texture;
         RawImage image3 = imageThree.GetComponent<RawImage>();
-        image3.texture = images[2];
+        image3.texture = imageList[2].texture;
         RawImage image4 = imageFour.GetComponent<RawImage>();
-        image4.texture = images[3];
+        image4.texture = imageList[3].texture;
         RawImage image5 = imageFive.GetComponent<RawImage>();
-        image5.texture = images[4];
+        image5.texture = imageList[4].texture;
 
 
     }
@@ -251,18 +268,18 @@ public class LoadImages : MonoBehaviour
             index2--;
             index3--;
             index4--;
-            imageMain.GetComponent<RawImage>().texture = images[index];
-            imageOne.GetComponent<RawImage>().texture = images[index];
+            imageMain.GetComponent<RawImage>().texture = imageList[index].texture;
+            imageOne.GetComponent<RawImage>().texture = imageList[index].texture;
 
-            imageTwo.GetComponent<RawImage>().texture = images[index1];
-            imageThree.GetComponent<RawImage>().texture = images[index2];
-            imageFour.GetComponent<RawImage>().texture = images[index3];
-            imageFive.GetComponent<RawImage>().texture = images[index4];
+            imageTwo.GetComponent<RawImage>().texture = imageList[index1].texture;
+            imageThree.GetComponent<RawImage>().texture = imageList[index2].texture;
+            imageFour.GetComponent<RawImage>().texture = imageList[index3].texture;
+            imageFive.GetComponent<RawImage>().texture = imageList[index4].texture;
 
-            bhvText.GetComponent<Text>().text = bhvs[index];
-            sinText.GetComponent<Text>().text = sins[index];
-            addressText.GetComponent<Text>().text = addresses[index];
-            dateText.GetComponent<Text>().text = dates[index];
+            bhvText.GetComponent<Text>().text = imageList[index].bhv;
+            sinText.GetComponent<Text>().text = imageList[index].sin;
+            addressText.GetComponent<Text>().text = imageList[index].address;
+            dateText.GetComponent<Text>().text = imageList[index].date;
         }
        
 
@@ -272,7 +289,7 @@ public class LoadImages : MonoBehaviour
     {
         Debug.Log("CLICK");
 
-        if (index < images.Count)
+        if (index < imageList.Count)
         {
             index++;
             index1++;
@@ -280,20 +297,20 @@ public class LoadImages : MonoBehaviour
             index3++;
             index4++;
 
-            imageMain.GetComponent<RawImage>().texture = images[index];
-            imageOne.GetComponent<RawImage>().texture = images[index];
+            imageMain.GetComponent<RawImage>().texture = imageList[index].texture;
+            imageOne.GetComponent<RawImage>().texture = imageList[index].texture;
 
-            imageTwo.GetComponent<RawImage>().texture = images[index1];
-            imageThree.GetComponent<RawImage>().texture = images[index2];
-            imageFour.GetComponent<RawImage>().texture = images[index3];
-            imageFive.GetComponent<RawImage>().texture = images[index4];
+            imageTwo.GetComponent<RawImage>().texture = imageList[index1].texture;
+            imageThree.GetComponent<RawImage>().texture = imageList[index2].texture;
+            imageFour.GetComponent<RawImage>().texture = imageList[index3].texture;
+            imageFive.GetComponent<RawImage>().texture = imageList[index4].texture;
 
 
 
-            bhvText.GetComponent<Text>().text = bhvs[index];
-            sinText.GetComponent<Text>().text = sins[index];
-            addressText.GetComponent<Text>().text = addresses[index];
-            dateText.GetComponent<Text>().text = dates[index];
+            bhvText.GetComponent<Text>().text = imageList[index].bhv;
+            sinText.GetComponent<Text>().text = imageList[index].sin;
+            addressText.GetComponent<Text>().text = imageList[index].address;
+            dateText.GetComponent<Text>().text = imageList[index].date;
         }
        
 
@@ -337,8 +354,14 @@ public class LoadImages : MonoBehaviour
         
         GameObject picture = Instantiate(prefabImage, controller.transform.position, Quaternion.identity);
         picture.GetComponent<Interactable>().m_ActiveHand = controller.GetComponent<HandInteraction>();
-        picture.GetComponent<Renderer>().material.mainTexture = images[selection];
+        picture.GetComponent<Renderer>().material.mainTexture = imageList[selection].texture;
+        picture.GetComponent<Image_cue>().photo = imageList[selection].sin;
+        picture.GetComponent<CustomTag>().AddTag("image");
+
+
     }
+
+
 
 
 }
