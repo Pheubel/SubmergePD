@@ -3,7 +3,7 @@ using Valve.VR;
 
 public class AudioToolController : MonoBehaviour
 {
-    [SerializeField] AudioBubbleController _bubblePrefab;
+    [SerializeField] GameObject _bubblePrefab;
     [SerializeField] Transform _handLocation;
     [Header("Input")]
     [SerializeField] SteamVR_Action_Boolean _recordAction;
@@ -49,7 +49,9 @@ public class AudioToolController : MonoBehaviour
         var fileLocation = "file:///" + Utilities.SavWav.Save($"{clip.name}.wav", clip, true);
 
         data.Instantiate(fileLocation, _handLocation.position, AudioType.WAV, clip);
-        newBubble.Initialize(data);
+        newBubble.GetComponent<AudioBubble>().Initialize(data);
+        Audio_cue bubbleData = newBubble.GetComponent<Audio_cue>();
+        bubbleData = new Audio_cue(ActiveUser.officer, "[Spreek Titel In]", 0, 0, _handLocation.position.x, _handLocation.position.y, _handLocation.position.z, "Placeholder");
     }
 
     //private void OnDestroy()
