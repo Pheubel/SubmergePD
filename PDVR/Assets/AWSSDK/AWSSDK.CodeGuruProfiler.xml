@@ -1,0 +1,2812 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.CodeGuruProfiler</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig">
+            <summary>
+            Configuration for accessing Amazon CodeGuruProfiler service
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException">
+            <summary>
+             Common exception for the CodeGuruProfiler service.
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonCodeGuruProfilerException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonCodeGuruProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonCodeGuruProfilerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonCodeGuruProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonCodeGuruProfilerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Internal.AmazonCodeGuruProfilerMetadata">
+            <summary>
+            Service metadata for  Amazon CodeGuruProfiler service
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Internal.AmazonCodeGuruProfilerMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Internal.AmazonCodeGuruProfilerMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.AgentConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.AgentConfiguration.PeriodInSeconds">
+            <summary>
+            Gets and sets the property PeriodInSeconds.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.AgentConfiguration.ShouldProfile">
+            <summary>
+            Gets and sets the property ShouldProfile.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.AgentOrchestrationConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.AgentOrchestrationConfig.ProfilingEnabled">
+            <summary>
+            Gets and sets the property ProfilingEnabled.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.AggregatedProfileTime">
+            <summary>
+            Information about the time range of the latest available aggregated profile.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.AggregatedProfileTime.Period">
+            <summary>
+            Gets and sets the property Period. 
+            <para>
+            The time period.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.AggregatedProfileTime.Start">
+            <summary>
+            Gets and sets the property Start. 
+            <para>
+            The start time.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest">
+            <summary>
+            Container for the parameters to the ConfigureAgent operation.
+            
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest.FleetInstanceId">
+            <summary>
+            Gets and sets the property FleetInstanceId.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ConfigureAgentResponse">
+            <summary>
+            The structure representing the configureAgentResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ConfigureAgentResponse.Configuration">
+            <summary>
+            Gets and sets the property Configuration.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ConflictException.#ctor(System.String)">
+            <summary>
+            Constructs a new ConflictException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ConflictException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ConflictException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ConflictException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ConflictException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ConflictException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest">
+            <summary>
+            Container for the parameters to the CreateProfilingGroup operation.
+            Creates a profiling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest.AgentOrchestrationConfig">
+            <summary>
+            Gets and sets the property AgentOrchestrationConfig. 
+            <para>
+            The agent orchestration configuration.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest.ClientToken">
+            <summary>
+            Gets and sets the property ClientToken. 
+            <para>
+            Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+            request.
+            </para>
+             
+            <para>
+            This parameter specifies a unique identifier for the new profiling group that helps
+            ensure idempotency.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupResponse">
+            <summary>
+            The structure representing the createProfilingGroupResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.CreateProfilingGroupResponse.ProfilingGroup">
+            <summary>
+            Gets and sets the property ProfilingGroup. 
+            <para>
+            Information about the new profiling group
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupRequest">
+            <summary>
+            Container for the parameters to the DeleteProfilingGroup operation.
+            Deletes a profiling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The profiling group name to delete.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupResponse">
+            <summary>
+            The structure representing the deleteProfilingGroupResponse.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupRequest">
+            <summary>
+            Container for the parameters to the DescribeProfilingGroup operation.
+            Describes a profiling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The profiling group name.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupResponse">
+            <summary>
+            The structure representing the describeProfilingGroupResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupResponse.ProfilingGroup">
+            <summary>
+            Gets and sets the property ProfilingGroup. 
+            <para>
+            Information about a profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.GetPolicyRequest">
+            <summary>
+            Container for the parameters to the GetPolicy operation.
+            Gets the profiling group policy.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetPolicyRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.GetPolicyResponse">
+            <summary>
+            The structure representing the getPolicyResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetPolicyResponse.Policy">
+            <summary>
+            Gets and sets the property Policy. 
+            <para>
+            The resource-based policy attached to the <code>ProfilingGroup</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetPolicyResponse.RevisionId">
+            <summary>
+            Gets and sets the property RevisionId. 
+            <para>
+            A unique identifier for the current revision of the policy.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.GetProfileRequest">
+            <summary>
+            Container for the parameters to the GetProfile operation.
+            Gets the aggregated profile of a profiling group for the specified time range. If
+            the requested time range does not align with the available aggregated profiles, it
+            is expanded to attain alignment. If aggregated profiles are available only for part
+            of the period requested, the profile is returned from the earliest available to the
+            latest within the requested time range. 
+            
+             
+            <para>
+            For example, if the requested time range is from 00:00 to 00:20 and the available
+            profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.
+            
+            </para>
+             
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.Accept">
+            <summary>
+            Gets and sets the property Accept. 
+            <para>
+            The format of the profile to return. You can choose <code>application/json</code>
+            or the default <code>application/x-amzn-ion</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.EndTime">
+            <summary>
+            Gets and sets the property EndTime.  
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.MaxDepth">
+            <summary>
+            Gets and sets the property MaxDepth. 
+            <para>
+            The maximum depth of the graph.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.Period">
+            <summary>
+            Gets and sets the property Period. 
+            <para>
+            The period of the profile to get. The time range must be in the past and not longer
+            than one week. 
+            </para>
+             
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group to get.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileRequest.StartTime">
+            <summary>
+            Gets and sets the property StartTime. 
+            <para>
+            The start time of the profile to get.
+            </para>
+             
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.GetProfileResponse">
+            <summary>
+            The structure representing the getProfileResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileResponse.ContentEncoding">
+            <summary>
+            Gets and sets the property ContentEncoding. 
+            <para>
+            The content encoding of the profile.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileResponse.ContentType">
+            <summary>
+            Gets and sets the property ContentType. 
+            <para>
+            The content type of the profile in the payload. It is either <code>application/json</code>
+            or the default <code>application/x-amzn-ion</code>.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.GetProfileResponse.Profile">
+            <summary>
+            Gets and sets the property Profile. 
+            <para>
+            Information about the profile.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.InternalServerException.#ctor(System.String)">
+            <summary>
+            Constructs a new InternalServerException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.InternalServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.InternalServerException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.InternalServerException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.InternalServerException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of InternalServerException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentConfigurationUnmarshaller">
+            <summary>
+            Response Unmarshaller for AgentConfiguration Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentConfigurationUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#AgentConfiguration,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentConfigurationUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentConfigurationUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigMarshaller">
+            <summary>
+            AgentOrchestrationConfig Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.AgentOrchestrationConfig,Amazon.Runtime.Internal.Transform.JsonMarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="requestObject"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigMarshaller.Instance">
+            <summary>
+            Singleton Marshaller.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigUnmarshaller">
+            <summary>
+            Response Unmarshaller for AgentOrchestrationConfig Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#AgentOrchestrationConfig,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AgentOrchestrationConfigUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AggregatedProfileTimeUnmarshaller">
+            <summary>
+            Response Unmarshaller for AggregatedProfileTime Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AggregatedProfileTimeUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#AggregatedProfileTime,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AggregatedProfileTimeUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.AggregatedProfileTimeUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentRequestMarshaller">
+            <summary>
+            ConfigureAgent Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ConfigureAgent operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ConfigureAgentResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupRequestMarshaller">
+            <summary>
+            CreateProfilingGroup Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for CreateProfilingGroup operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.CreateProfilingGroupResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupRequestMarshaller">
+            <summary>
+            DeleteProfilingGroup Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DeleteProfilingGroup operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DeleteProfilingGroupResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupRequestMarshaller">
+            <summary>
+            DescribeProfilingGroup Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for DescribeProfilingGroup operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.DescribeProfilingGroupResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyRequestMarshaller">
+            <summary>
+            GetPolicy Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.GetPolicyRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetPolicy operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetPolicyResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileRequestMarshaller">
+            <summary>
+            GetProfile Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.GetProfileRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetProfile operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.GetProfileResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesRequestMarshaller">
+            <summary>
+            ListProfileTimes Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListProfileTimes operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfileTimesResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsRequestMarshaller">
+            <summary>
+            ListProfilingGroups Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListProfilingGroups operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ListProfilingGroupsResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileRequestMarshaller">
+            <summary>
+            PostAgentProfile Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PostAgentProfile operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PostAgentProfileResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfileTimeUnmarshaller">
+            <summary>
+            Response Unmarshaller for ProfileTime Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfileTimeUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#ProfileTime,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfileTimeUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfileTimeUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingGroupDescriptionUnmarshaller">
+            <summary>
+            Response Unmarshaller for ProfilingGroupDescription Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingGroupDescriptionUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#ProfilingGroupDescription,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingGroupDescriptionUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingGroupDescriptionUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingStatusUnmarshaller">
+            <summary>
+            Response Unmarshaller for ProfilingStatus Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingStatusUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#CodeGuruProfiler#Model#ProfilingStatus,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingStatusUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.ProfilingStatusUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionRequestMarshaller">
+            <summary>
+            PutPermission Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.PutPermissionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for PutPermission operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.PutPermissionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionRequestMarshaller">
+            <summary>
+            RemovePermission Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.RemovePermissionRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for RemovePermission operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.RemovePermissionResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupRequestMarshaller">
+            <summary>
+            UpdateProfilingGroup Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupRequestMarshaller.Marshall(Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for UpdateProfilingGroup operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.Internal.MarshallTransformations.UpdateProfilingGroupResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest">
+            <summary>
+            Container for the parameters to the ListProfileTimes operation.
+            List the start times of the available aggregated profiles of a profiling group for
+            an aggregation period within the specified time range.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.EndTime">
+            <summary>
+            Gets and sets the property EndTime. 
+            <para>
+            The end time of the time range from which to list the profiles.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of profile time results returned by <code>ListProfileTimes</code>
+            in paginated output. When this parameter is used, <code>ListProfileTimes</code> only
+            returns <code>maxResults</code> results in a single page with a <code>nextToken</code>
+            response element. The remaining results of the initial request can be seen by sending
+            another <code>ListProfileTimes</code> request with the returned <code>nextToken</code>
+            value. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The <code>nextToken</code> value returned from a previous paginated <code>ListProfileTimes</code>
+            request where <code>maxResults</code> was used and the results exceeded the value
+            of that parameter. Pagination continues from the end of the previous results that
+            returned the <code>nextToken</code> value. 
+            </para>
+             <note> 
+            <para>
+            This token should be treated as an opaque identifier that is only used to retrieve
+            the next items in a list and not for other programmatic purposes.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.OrderBy">
+            <summary>
+            Gets and sets the property OrderBy. 
+            <para>
+            The order (ascending or descending by start time of the profile) to use when listing
+            profiles. Defaults to <code>TIMESTAMP_DESCENDING</code>. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.Period">
+            <summary>
+            Gets and sets the property Period. 
+            <para>
+            The aggregation period.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest.StartTime">
+            <summary>
+            Gets and sets the property StartTime. 
+            <para>
+            The start time of the time range from which to list the profiles.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ListProfileTimesResponse">
+            <summary>
+            The structure representing the listProfileTimesResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The <code>nextToken</code> value to include in a future <code>ListProfileTimes</code>
+            request. When the results of a <code>ListProfileTimes</code> request exceed <code>maxResults</code>,
+            this value can be used to retrieve the next page of results. This value is <code>null</code>
+            when there are no more results to return. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfileTimesResponse.ProfileTimes">
+            <summary>
+            Gets and sets the property ProfileTimes. 
+            <para>
+            The list of start times of the available profiles for the aggregation period in the
+            specified time range. 
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest">
+            <summary>
+            Container for the parameters to the ListProfilingGroups operation.
+            Lists profiling groups.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest.IncludeDescription">
+            <summary>
+            Gets and sets the property IncludeDescription. 
+            <para>
+            A Boolean value indicating whether to include a description.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The maximum number of profiling groups results returned by <code>ListProfilingGroups</code>
+            in paginated output. When this parameter is used, <code>ListProfilingGroups</code>
+            only returns <code>maxResults</code> results in a single page along with a <code>nextToken</code>
+            response element. The remaining results of the initial request can be seen by sending
+            another <code>ListProfilingGroups</code> request with the returned <code>nextToken</code>
+            value. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The <code>nextToken</code> value returned from a previous paginated <code>ListProfilingGroups</code>
+            request where <code>maxResults</code> was used and the results exceeded the value
+            of that parameter. Pagination continues from the end of the previous results that
+            returned the <code>nextToken</code> value. 
+            </para>
+             <note> 
+            <para>
+            This token should be treated as an opaque identifier that is only used to retrieve
+            the next items in a list and not for other programmatic purposes.
+            </para>
+             </note>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsResponse">
+            <summary>
+            The structure representing the listProfilingGroupsResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The <code>nextToken</code> value to include in a future <code>ListProfilingGroups</code>
+            request. When the results of a <code>ListProfilingGroups</code> request exceed <code>maxResults</code>,
+            this value can be used to retrieve the next page of results. This value is <code>null</code>
+            when there are no more results to return. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsResponse.ProfilingGroupNames">
+            <summary>
+            Gets and sets the property ProfilingGroupNames. 
+            <para>
+            Information about profiling group names.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ListProfilingGroupsResponse.ProfilingGroups">
+            <summary>
+            Gets and sets the property ProfilingGroups. 
+            <para>
+            Information about profiling groups.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest">
+            <summary>
+            Container for the parameters to the PostAgentProfile operation.
+            
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest.AgentProfile">
+            <summary>
+            Gets and sets the property AgentProfile.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest.ContentType">
+            <summary>
+            Gets and sets the property ContentType.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest.ProfileToken">
+            <summary>
+            Gets and sets the property ProfileToken.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.PostAgentProfileResponse">
+            <summary>
+            The structure representing the postAgentProfileResponse.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ProfileTime">
+            <summary>
+            Information about the profile time.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfileTime.Start">
+            <summary>
+            Gets and sets the property Start. 
+            <para>
+            The start time of the profile.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription">
+            <summary>
+            The description of a profiling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.AgentOrchestrationConfig">
+            <summary>
+            Gets and sets the property AgentOrchestrationConfig.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.Arn">
+            <summary>
+            Gets and sets the property Arn. 
+            <para>
+            The Amazon Resource Name (ARN) identifying the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.CreatedAt">
+            <summary>
+            Gets and sets the property CreatedAt. 
+            <para>
+            The time, in milliseconds since the epoch, when the profiling group was created.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.Name">
+            <summary>
+            Gets and sets the property Name. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.ProfilingStatus">
+            <summary>
+            Gets and sets the property ProfilingStatus. 
+            <para>
+            The status of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingGroupDescription.UpdatedAt">
+            <summary>
+            Gets and sets the property UpdatedAt. 
+            <para>
+            The time, in milliseconds since the epoch, when the profiling group was last updated.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ProfilingStatus">
+            <summary>
+            Information about the profiling status.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingStatus.LatestAgentOrchestratedAt">
+            <summary>
+            Gets and sets the property LatestAgentOrchestratedAt. 
+            <para>
+            The time, in milliseconds since the epoch, when the latest agent was orchestrated.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingStatus.LatestAgentProfileReportedAt">
+            <summary>
+            Gets and sets the property LatestAgentProfileReportedAt. 
+            <para>
+            The time, in milliseconds since the epoch, when the latest agent was reported..
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.ProfilingStatus.LatestAggregatedProfile">
+            <summary>
+            Gets and sets the property LatestAggregatedProfile. 
+            <para>
+            The latest aggregated profile
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.PutPermissionRequest">
+            <summary>
+            Container for the parameters to the PutPermission operation.
+            Provides permission to the principals. This overwrites the existing permissions, and
+            is not additive.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionRequest.ActionGroup">
+            <summary>
+            Gets and sets the property ActionGroup. 
+            <para>
+            The list of actions that the users and roles can perform on the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionRequest.Principals">
+            <summary>
+            Gets and sets the property Principals. 
+            <para>
+            The list of role and user ARNs or the accountId that needs access (wildcards are not
+            allowed).
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionRequest.RevisionId">
+            <summary>
+            Gets and sets the property RevisionId. 
+            <para>
+            A unique identifier for the current revision of the policy. This is required, if a
+            policy exists for the profiling group. This is not required when creating the policy
+            for the first time.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.PutPermissionResponse">
+            <summary>
+            The structure representing the putPermissionResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionResponse.Policy">
+            <summary>
+            Gets and sets the property Policy. 
+            <para>
+            The resource-based policy.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.PutPermissionResponse.RevisionId">
+            <summary>
+            Gets and sets the property RevisionId. 
+            <para>
+            A unique identifier for the current revision of the policy.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.RemovePermissionRequest">
+            <summary>
+            Container for the parameters to the RemovePermission operation.
+            Removes statement for the provided action group from the policy.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.RemovePermissionRequest.ActionGroup">
+            <summary>
+            Gets and sets the property ActionGroup. 
+            <para>
+            The list of actions that the users and roles can perform on the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.RemovePermissionRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.RemovePermissionRequest.RevisionId">
+            <summary>
+            Gets and sets the property RevisionId. 
+            <para>
+            A unique identifier for the current revision of the policy.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.RemovePermissionResponse">
+            <summary>
+            The structure representing the removePermissionResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.RemovePermissionResponse.Policy">
+            <summary>
+            Gets and sets the property Policy. 
+            <para>
+            The resource-based policy.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.RemovePermissionResponse.RevisionId">
+            <summary>
+            Gets and sets the property RevisionId. 
+            <para>
+            A unique identifier for the current revision of the policy.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException.#ctor(System.String)">
+            <summary>
+            Constructs a new ServiceQuotaExceededException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ServiceQuotaExceededException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ThrottlingException.#ctor(System.String)">
+            <summary>
+            Constructs a new ThrottlingException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ThrottlingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ThrottlingException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ThrottlingException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ThrottlingException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ThrottlingException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest">
+            <summary>
+            Container for the parameters to the UpdateProfilingGroup operation.
+            Updates a profiling group.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest.AgentOrchestrationConfig">
+            <summary>
+            Gets and sets the property AgentOrchestrationConfig.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest.ProfilingGroupName">
+            <summary>
+            Gets and sets the property ProfilingGroupName. 
+            <para>
+            The name of the profiling group to update.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupResponse">
+            <summary>
+            The structure representing the updateProfilingGroupResponse.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupResponse.ProfilingGroup">
+            <summary>
+            Gets and sets the property ProfilingGroup. 
+            <para>
+            Updated information about the profiling group.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            <summary>
+             CodeGuruProfiler exception
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerRequest">
+            <summary>
+            Base class for CodeGuruProfiler operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.ActionGroup">
+            <summary>
+            Constants used for properties of type ActionGroup.
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.ActionGroup.AgentPermissions">
+            <summary>
+            Constant AgentPermissions for ActionGroup
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.ActionGroup.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.ActionGroup.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.ActionGroup.op_Implicit(System.String)~Amazon.CodeGuruProfiler.ActionGroup">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.AggregationPeriod">
+            <summary>
+            Constants used for properties of type AggregationPeriod.
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.AggregationPeriod.P1D">
+            <summary>
+            Constant P1D for AggregationPeriod
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.AggregationPeriod.PT1H">
+            <summary>
+            Constant PT1H for AggregationPeriod
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.AggregationPeriod.PT5M">
+            <summary>
+            Constant PT5M for AggregationPeriod
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AggregationPeriod.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AggregationPeriod.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AggregationPeriod.op_Implicit(System.String)~Amazon.CodeGuruProfiler.AggregationPeriod">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.OrderBy">
+            <summary>
+            Constants used for properties of type OrderBy.
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.OrderBy.TimestampAscending">
+            <summary>
+            Constant TimestampAscending for OrderBy
+            </summary>
+        </member>
+        <member name="F:Amazon.CodeGuruProfiler.OrderBy.TimestampDescending">
+            <summary>
+            Constant TimestampDescending for OrderBy
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.OrderBy.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.OrderBy.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.OrderBy.op_Implicit(System.String)~Amazon.CodeGuruProfiler.OrderBy">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient">
+             <summary>
+             Implementation for accessing CodeGuruProfiler
+            
+             This section provides documentation for the Amazon CodeGuru Profiler API operations.
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor">
+             <summary>
+             Constructs AmazonCodeGuruProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonCodeGuruProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig)">
+             <summary>
+             Constructs AmazonCodeGuruProfilerClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonCodeGuruProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Credentials and an
+            AmazonCodeGuruProfilerClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonCodeGuruProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String,Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonCodeGuruProfilerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonCodeGuruProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.#ctor(System.String,System.String,System.String,Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerConfig)">
+            <summary>
+            Constructs AmazonCodeGuruProfilerClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonCodeGuruProfilerClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonCodeGuruProfilerClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.ConfigureAgentAsync(Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ConfigureAgent service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ConfigureAgent service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ConfigureAgent">REST API Reference for ConfigureAgent Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.CreateProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException">
+            You have exceeded your service quota. To perform the requested action, remove some
+            of the relevant resources, or use <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html">Service
+            Quotas</a> to request a service quota increase.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/CreateProfilingGroup">REST API Reference for CreateProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.DeleteProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/DeleteProfilingGroup">REST API Reference for DeleteProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.DescribeProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/DescribeProfilingGroup">REST API Reference for DescribeProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.GetPolicyAsync(Amazon.CodeGuruProfiler.Model.GetPolicyRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the profiling group policy.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPolicy service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetPolicy service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/GetPolicy">REST API Reference for GetPolicy Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.GetProfileAsync(Amazon.CodeGuruProfiler.Model.GetProfileRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the aggregated profile of a profiling group for the specified time range. If
+            the requested time range does not align with the available aggregated profiles, it
+            is expanded to attain alignment. If aggregated profiles are available only for part
+            of the period requested, the profile is returned from the earliest available to the
+            latest within the requested time range. 
+            
+             
+            <para>
+            For example, if the requested time range is from 00:00 to 00:20 and the available
+            profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.
+            
+            </para>
+             
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProfile service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetProfile service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/GetProfile">REST API Reference for GetProfile Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.ListProfileTimesAsync(Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest,System.Threading.CancellationToken)">
+            <summary>
+            List the start times of the available aggregated profiles of a profiling group for
+            an aggregation period within the specified time range.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListProfileTimes service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListProfileTimes service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ListProfileTimes">REST API Reference for ListProfileTimes Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.ListProfilingGroupsAsync(Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists profiling groups.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListProfilingGroups service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListProfilingGroups service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ListProfilingGroups">REST API Reference for ListProfilingGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.PostAgentProfileAsync(Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostAgentProfile service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PostAgentProfile service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/PostAgentProfile">REST API Reference for PostAgentProfile Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.PutPermissionAsync(Amazon.CodeGuruProfiler.Model.PutPermissionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides permission to the principals. This overwrites the existing permissions, and
+            is not additive.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutPermission service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutPermission service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/PutPermission">REST API Reference for PutPermission Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.RemovePermissionAsync(Amazon.CodeGuruProfiler.Model.RemovePermissionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes statement for the provided action group from the policy.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the RemovePermission service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the RemovePermission service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/RemovePermission">REST API Reference for RemovePermission Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.AmazonCodeGuruProfilerClient.UpdateProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/UpdateProfilingGroup">REST API Reference for UpdateProfilingGroup Operation</seealso>
+        </member>
+        <member name="T:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler">
+             <summary>
+             Interface for accessing CodeGuruProfiler
+            
+             This section provides documentation for the Amazon CodeGuru Profiler API operations.
+             </summary>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.ConfigureAgentAsync(Amazon.CodeGuruProfiler.Model.ConfigureAgentRequest,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ConfigureAgent service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ConfigureAgent service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ConfigureAgent">REST API Reference for ConfigureAgent Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.CreateProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.CreateProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the CreateProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the CreateProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ServiceQuotaExceededException">
+            You have exceeded your service quota. To perform the requested action, remove some
+            of the relevant resources, or use <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html">Service
+            Quotas</a> to request a service quota increase.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/CreateProfilingGroup">REST API Reference for CreateProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.DeleteProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.DeleteProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DeleteProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DeleteProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/DeleteProfilingGroup">REST API Reference for DeleteProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.DescribeProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.DescribeProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Describes a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the DescribeProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the DescribeProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/DescribeProfilingGroup">REST API Reference for DescribeProfilingGroup Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.GetPolicyAsync(Amazon.CodeGuruProfiler.Model.GetPolicyRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the profiling group policy.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetPolicy service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetPolicy service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/GetPolicy">REST API Reference for GetPolicy Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.GetProfileAsync(Amazon.CodeGuruProfiler.Model.GetProfileRequest,System.Threading.CancellationToken)">
+            <summary>
+            Gets the aggregated profile of a profiling group for the specified time range. If
+            the requested time range does not align with the available aggregated profiles, it
+            is expanded to attain alignment. If aggregated profiles are available only for part
+            of the period requested, the profile is returned from the earliest available to the
+            latest within the requested time range. 
+            
+             
+            <para>
+            For example, if the requested time range is from 00:00 to 00:20 and the available
+            profiles are from 00:15 to 00:25, the returned profile will be from 00:15 to 00:20.
+            
+            </para>
+             
+            <para>
+            You must specify exactly two of the following parameters: <code>startTime</code>,
+            <code>period</code>, and <code>endTime</code>. 
+            </para>
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetProfile service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetProfile service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/GetProfile">REST API Reference for GetProfile Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.ListProfileTimesAsync(Amazon.CodeGuruProfiler.Model.ListProfileTimesRequest,System.Threading.CancellationToken)">
+            <summary>
+            List the start times of the available aggregated profiles of a profiling group for
+            an aggregation period within the specified time range.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListProfileTimes service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListProfileTimes service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ListProfileTimes">REST API Reference for ListProfileTimes Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.ListProfilingGroupsAsync(Amazon.CodeGuruProfiler.Model.ListProfilingGroupsRequest,System.Threading.CancellationToken)">
+            <summary>
+            Lists profiling groups.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListProfilingGroups service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListProfilingGroups service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/ListProfilingGroups">REST API Reference for ListProfilingGroups Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.PostAgentProfileAsync(Amazon.CodeGuruProfiler.Model.PostAgentProfileRequest,System.Threading.CancellationToken)">
+            <summary>
+            
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PostAgentProfile service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PostAgentProfile service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/PostAgentProfile">REST API Reference for PostAgentProfile Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.PutPermissionAsync(Amazon.CodeGuruProfiler.Model.PutPermissionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Provides permission to the principals. This overwrites the existing permissions, and
+            is not additive.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the PutPermission service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the PutPermission service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/PutPermission">REST API Reference for PutPermission Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.RemovePermissionAsync(Amazon.CodeGuruProfiler.Model.RemovePermissionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Removes statement for the provided action group from the policy.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the RemovePermission service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the RemovePermission service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/RemovePermission">REST API Reference for RemovePermission Operation</seealso>
+        </member>
+        <member name="M:Amazon.CodeGuruProfiler.IAmazonCodeGuruProfiler.UpdateProfilingGroupAsync(Amazon.CodeGuruProfiler.Model.UpdateProfilingGroupRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates a profiling group.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the UpdateProfilingGroup service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the UpdateProfilingGroup service method, as returned by CodeGuruProfiler.</returns>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ConflictException">
+            The requested operation would cause a conflict with the current state of a service
+            resource associated with the request. Resolve the conflict before retrying this request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.InternalServerException">
+            The server encountered an internal error and is unable to complete the request.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ResourceNotFoundException">
+            The resource specified in the request does not exist.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ThrottlingException">
+            The request was denied due to request throttling.
+            </exception>
+            <exception cref="T:Amazon.CodeGuruProfiler.Model.ValidationException">
+            The parameter is not valid.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/codeguruprofiler-2019-07-18/UpdateProfilingGroup">REST API Reference for UpdateProfilingGroup Operation</seealso>
+        </member>
+    </members>
+</doc>

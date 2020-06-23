@@ -420,3 +420,12 @@ PDVR/Builds/*
 
 !PDVR/Assets/*.meta
 !PDVR/Assets/**/*.meta
+
+
+!PDVR/Assets/*.obj
+!PDVR/Assets/**/*.obj
+
+!PDVR/Assets/AWSSDK/*.pdb
+!PDVR/Assets/AWSSDK/**/*.pdb
+
+!PDVR/PAckages/manifest.json

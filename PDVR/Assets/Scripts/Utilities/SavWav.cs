@@ -57,10 +57,10 @@ namespace Utilities
                 filename += ".wav";
             }
 
-            var filepath = Path.Combine("clips", filename);
+            var filepath = Path.Combine(Application.streamingAssetsPath,"clips", filename);
 
             // Make sure directory exists if user is saving to sub dir.
-            Directory.CreateDirectory("clips");
+            Directory.CreateDirectory(Path.Combine(Application.streamingAssetsPath, "clips"));
 
             using (var fileStream = File.Create(filepath))
             using (var writer = new BinaryWriter(fileStream))

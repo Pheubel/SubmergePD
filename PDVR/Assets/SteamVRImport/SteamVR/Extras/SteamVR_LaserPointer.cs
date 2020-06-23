@@ -143,17 +143,22 @@ namespace Valve.VR.Extras
 
             if (bHit && interactWithUI.GetStateUp(pose.inputSource))
             {
+               /* PointerEventArgs argsClick = new PointerEventArgs();
+                argsClick.fromInputSource = pose.inputSource;
+                argsClick.distance = hit.distance;
+                argsClick.flags = 0;
+                argsClick.target = hit.transform;
+                OnPointerClick(argsClick); */
+            }
+
+            if (squeeze.GetStateDown(pose.inputSource))
+            {
                 PointerEventArgs argsClick = new PointerEventArgs();
                 argsClick.fromInputSource = pose.inputSource;
                 argsClick.distance = hit.distance;
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
-            }
-
-            if (squeeze.GetStateDown(pose.inputSource))
-            {
-                print("it went down");
             }
 
             if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))

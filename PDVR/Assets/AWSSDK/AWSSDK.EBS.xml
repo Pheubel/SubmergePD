@@ -1,0 +1,1119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AWSSDK.EBS</name>
+    </assembly>
+    <members>
+        <member name="T:Amazon.EBS.AmazonEBSConfig">
+            <summary>
+            Configuration for accessing Amazon EBS service
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSConfig.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.AmazonEBSConfig.RegionEndpointServiceName">
+            <summary>
+            The constant used to lookup in the region hash the endpoint.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.AmazonEBSConfig.ServiceVersion">
+            <summary>
+            Gets the ServiceVersion property.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.AmazonEBSConfig.UserAgent">
+            <summary>
+            Gets the value of UserAgent property.
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.AmazonEBSException">
+            <summary>
+             Common exception for the EBS service.
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSException.#ctor(System.String)">
+            <summary>
+            Construct instance of AmazonEBSException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of AmazonEBSException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of AmazonEBSException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonEBSException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of AmazonEBSException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.EBS.Internal.AmazonEBSMetadata">
+            <summary>
+            Service metadata for  Amazon EBS service
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Internal.AmazonEBSMetadata.ServiceId">
+            <summary>
+            Gets the value of the Service Id.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Internal.AmazonEBSMetadata.OperationNameMapping">
+            <summary>
+            Gets the dictionary that gives mapping of renamed operations
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.AmazonEBSRequest">
+            <summary>
+            Base class for EBS operation requests.
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.Block">
+            <summary>
+            A block of data in an Amazon Elastic Block Store snapshot.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.Block.BlockIndex">
+            <summary>
+            Gets and sets the property BlockIndex. 
+            <para>
+            The block index.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.Block.BlockToken">
+            <summary>
+            Gets and sets the property BlockToken. 
+            <para>
+            The block token for the block index.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.ChangedBlock">
+            <summary>
+            A block of data in an Amazon Elastic Block Store snapshot that is different from another
+            snapshot of the same volume/snapshot lineage.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ChangedBlock.BlockIndex">
+            <summary>
+            Gets and sets the property BlockIndex. 
+            <para>
+            The block index.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ChangedBlock.FirstBlockToken">
+            <summary>
+            Gets and sets the property FirstBlockToken. 
+            <para>
+            The block token for the block index of the <code>FirstSnapshotId</code> specified
+            in the <code>ListChangedBlocks</code> operation. This value is absent if the first
+            snapshot does not have the changed block that is on the second snapshot.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ChangedBlock.SecondBlockToken">
+            <summary>
+            Gets and sets the property SecondBlockToken. 
+            <para>
+            The block token for the block index of the <code>SecondSnapshotId</code> specified
+            in the <code>ListChangedBlocks</code> operation.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.GetSnapshotBlockRequest">
+            <summary>
+            Container for the parameters to the GetSnapshotBlock operation.
+            Returns the data in a block in an Amazon Elastic Block Store snapshot.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockRequest.BlockIndex">
+            <summary>
+            Gets and sets the property BlockIndex. 
+            <para>
+            The block index of the block from which to get data.
+            </para>
+             
+            <para>
+            Obtain the <code>BlockIndex</code> by running the <code>ListChangedBlocks</code> or
+            <code>ListSnapshotBlocks</code> operations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockRequest.BlockToken">
+            <summary>
+            Gets and sets the property BlockToken. 
+            <para>
+            The block token of the block from which to get data.
+            </para>
+             
+            <para>
+            Obtain the <code>BlockToken</code> by running the <code>ListChangedBlocks</code> or
+            <code>ListSnapshotBlocks</code> operations.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockRequest.SnapshotId">
+            <summary>
+            Gets and sets the property SnapshotId. 
+            <para>
+            The ID of the snapshot containing the block from which to get data.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.GetSnapshotBlockResponse">
+            <summary>
+            This is the response object from the GetSnapshotBlock operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockResponse.BlockData">
+            <summary>
+            Gets and sets the property BlockData. 
+            <para>
+            The data content of the block.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockResponse.Checksum">
+            <summary>
+            Gets and sets the property Checksum. 
+            <para>
+            The checksum generated for the block, which is Base64 encoded.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockResponse.ChecksumAlgorithm">
+            <summary>
+            Gets and sets the property ChecksumAlgorithm. 
+            <para>
+            The algorithm used to generate the checksum for the block, such as SHA256.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.GetSnapshotBlockResponse.DataLength">
+            <summary>
+            Gets and sets the property DataLength. 
+            <para>
+            The size of the data in the block.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.Model.GetSnapshotBlockResponse.Dispose">
+            <summary>
+            Disposes of all managed and unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.BlockUnmarshaller">
+            <summary>
+            Response Unmarshaller for Block Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.BlockUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#EBS#Model#Block,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.BlockUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.BlockUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.ChangedBlockUnmarshaller">
+            <summary>
+            Response Unmarshaller for ChangedBlock Object
+            </summary>  
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ChangedBlockUnmarshaller.Amazon#Runtime#Internal#Transform#IUnmarshaller{Amazon#EBS#Model#ChangedBlock,Amazon#Runtime#Internal#Transform#XmlUnmarshallerContext}#Unmarshall(Amazon.Runtime.Internal.Transform.XmlUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ChangedBlockUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.ChangedBlockUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockRequestMarshaller">
+            <summary>
+            GetSnapshotBlock Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockRequestMarshaller.Marshall(Amazon.EBS.Model.GetSnapshotBlockRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for GetSnapshotBlock operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockResponseUnmarshaller.HasStreamingProperty">
+            <summary>
+            Overriden to return true indicating the response contains streaming data.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.GetSnapshotBlockResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksRequestMarshaller">
+            <summary>
+            ListChangedBlocks Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksRequestMarshaller.Marshall(Amazon.EBS.Model.ListChangedBlocksRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListChangedBlocks operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.ListChangedBlocksResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksRequestMarshaller">
+            <summary>
+            ListSnapshotBlocks Request Marshaller
+            </summary>       
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksRequestMarshaller.Marshall(Amazon.Runtime.AmazonWebServiceRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksRequestMarshaller.Marshall(Amazon.EBS.Model.ListSnapshotBlocksRequest)">
+            <summary>
+            Marshaller the request object to the HTTP request.
+            </summary>  
+            <param name="publicRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksRequestMarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksResponseUnmarshaller">
+            <summary>
+            Response Unmarshaller for ListSnapshotBlocks operation
+            </summary>  
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksResponseUnmarshaller.Unmarshall(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext)">
+            <summary>
+            Unmarshaller the response from the service to the response class.
+            </summary>  
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksResponseUnmarshaller.UnmarshallException(Amazon.Runtime.Internal.Transform.JsonUnmarshallerContext,System.Exception,System.Net.HttpStatusCode)">
+            <summary>
+            Unmarshaller error response to exception.
+            </summary>  
+            <param name="context"></param>
+            <param name="innerException"></param>
+            <param name="statusCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amazon.EBS.Model.Internal.MarshallTransformations.ListSnapshotBlocksResponseUnmarshaller.Instance">
+            <summary>
+            Gets the singleton.
+            </summary>  
+        </member>
+        <member name="T:Amazon.EBS.Model.ListChangedBlocksRequest">
+            <summary>
+            Container for the parameters to the ListChangedBlocks operation.
+            Returns the block indexes and block tokens for blocks that are different between two
+            Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksRequest.FirstSnapshotId">
+            <summary>
+            Gets and sets the property FirstSnapshotId. 
+            <para>
+            The ID of the first snapshot to use for the comparison.
+            </para>
+             <important> 
+            <para>
+            The <code>FirstSnapshotID</code> parameter must be specified with a <code>SecondSnapshotId</code>
+            parameter; otherwise, an error occurs.
+            </para>
+             </important>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The number of results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to request the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksRequest.SecondSnapshotId">
+            <summary>
+            Gets and sets the property SecondSnapshotId. 
+            <para>
+            The ID of the second snapshot to use for the comparison.
+            </para>
+             <important> 
+            <para>
+            The <code>SecondSnapshotId</code> parameter must be specified with a <code>FirstSnapshotID</code>
+            parameter; otherwise, an error occurs.
+            </para>
+             </important>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksRequest.StartingBlockIndex">
+            <summary>
+            Gets and sets the property StartingBlockIndex. 
+            <para>
+            The block index from which the comparison should start.
+            </para>
+             
+            <para>
+            The list in the response will start from this block index or the next valid block
+            index in the snapshots.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.ListChangedBlocksResponse">
+            <summary>
+            This is the response object from the ListChangedBlocks operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksResponse.BlockSize">
+            <summary>
+            Gets and sets the property BlockSize. 
+            <para>
+            The size of the block.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksResponse.ChangedBlocks">
+            <summary>
+            Gets and sets the property ChangedBlocks. 
+            <para>
+            An array of objects containing information about the changed blocks.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksResponse.ExpiryTime">
+            <summary>
+            Gets and sets the property ExpiryTime. 
+            <para>
+            The time when the <code>BlockToken</code> expires.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListChangedBlocksResponse.VolumeSize">
+            <summary>
+            Gets and sets the property VolumeSize. 
+            <para>
+            The size of the volume in GB.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.ListSnapshotBlocksRequest">
+            <summary>
+            Container for the parameters to the ListSnapshotBlocks operation.
+            Returns the block indexes and block tokens for blocks in an Amazon Elastic Block Store
+            snapshot.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksRequest.MaxResults">
+            <summary>
+            Gets and sets the property MaxResults. 
+            <para>
+            The number of results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksRequest.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to request the next page of results.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksRequest.SnapshotId">
+            <summary>
+            Gets and sets the property SnapshotId. 
+            <para>
+            The ID of the snapshot from which to get block indexes and block tokens.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksRequest.StartingBlockIndex">
+            <summary>
+            Gets and sets the property StartingBlockIndex. 
+            <para>
+            The block index from which the list should start. The list in the response will start
+            from this block index or the next valid block index in the snapshot.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.ListSnapshotBlocksResponse">
+            <summary>
+            This is the response object from the ListSnapshotBlocks operation.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksResponse.Blocks">
+            <summary>
+            Gets and sets the property Blocks. 
+            <para>
+            An array of objects containing information about the blocks.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksResponse.BlockSize">
+            <summary>
+            Gets and sets the property BlockSize. 
+            <para>
+            The size of the block.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksResponse.ExpiryTime">
+            <summary>
+            Gets and sets the property ExpiryTime. 
+            <para>
+            The time when the <code>BlockToken</code> expires.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksResponse.NextToken">
+            <summary>
+            Gets and sets the property NextToken. 
+            <para>
+            The token to use to retrieve the next page of results. This value is null when there
+            are no more results to return.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.Model.ListSnapshotBlocksResponse.VolumeSize">
+            <summary>
+            Gets and sets the property VolumeSize. 
+            <para>
+            The size of the volume in GB.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Amazon.EBS.Model.ResourceNotFoundException">
+            <summary>
+             EBS exception
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.Model.ResourceNotFoundException.#ctor(System.String)">
+            <summary>
+            Constructs a new ResourceNotFoundException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ResourceNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ResourceNotFoundException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ResourceNotFoundException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ResourceNotFoundException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ResourceNotFoundException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.EBS.Model.ValidationException">
+            <summary>
+             EBS exception
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.Model.ValidationException.#ctor(System.String)">
+            <summary>
+            Constructs a new ValidationException with the specified error
+            message.
+            </summary>
+            <param name="message">
+            Describes the error encountered.
+            </param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ValidationException.#ctor(System.String,System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ValidationException.#ctor(System.Exception)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ValidationException.#ctor(System.String,System.Exception,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="M:Amazon.EBS.Model.ValidationException.#ctor(System.String,Amazon.Runtime.ErrorType,System.String,System.String,System.Net.HttpStatusCode)">
+            <summary>
+            Construct instance of ValidationException
+            </summary>
+            <param name="message"></param>
+            <param name="errorType"></param>
+            <param name="errorCode"></param>
+            <param name="requestId"></param>
+            <param name="statusCode"></param>
+        </member>
+        <member name="T:Amazon.EBS.ChecksumAlgorithm">
+            <summary>
+            Constants used for properties of type ChecksumAlgorithm.
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ChecksumAlgorithm.SHA256">
+            <summary>
+            Constant SHA256 for ChecksumAlgorithm
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.ChecksumAlgorithm.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.ChecksumAlgorithm.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.EBS.ChecksumAlgorithm.op_Implicit(System.String)~Amazon.EBS.ChecksumAlgorithm">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.EBS.ValidationExceptionReason">
+            <summary>
+            Constants used for properties of type ValidationExceptionReason.
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ValidationExceptionReason.INVALID_BLOCK_TOKEN">
+            <summary>
+            Constant INVALID_BLOCK_TOKEN for ValidationExceptionReason
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ValidationExceptionReason.INVALID_CUSTOMER_KEY">
+            <summary>
+            Constant INVALID_CUSTOMER_KEY for ValidationExceptionReason
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ValidationExceptionReason.INVALID_PAGE_TOKEN">
+            <summary>
+            Constant INVALID_PAGE_TOKEN for ValidationExceptionReason
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ValidationExceptionReason.INVALID_SNAPSHOT_ID">
+            <summary>
+            Constant INVALID_SNAPSHOT_ID for ValidationExceptionReason
+            </summary>
+        </member>
+        <member name="F:Amazon.EBS.ValidationExceptionReason.UNRELATED_SNAPSHOTS">
+            <summary>
+            Constant UNRELATED_SNAPSHOTS for ValidationExceptionReason
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.ValidationExceptionReason.#ctor(System.String)">
+            <summary>
+            This constant constructor does not need to be called if the constant
+            you are attempting to use is already defined as a static instance of 
+            this class.
+            This constructor should be used to construct constants that are not
+            defined as statics, for instance if attempting to use a feature that is
+            newer than the current version of the SDK.
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.ValidationExceptionReason.FindValue(System.String)">
+            <summary>
+            Finds the constant for the unique value.
+            </summary>
+            <param name="value">The unique value for the constant</param>
+            <returns>The constant for the unique value</returns>
+        </member>
+        <member name="M:Amazon.EBS.ValidationExceptionReason.op_Implicit(System.String)~Amazon.EBS.ValidationExceptionReason">
+            <summary>
+            Utility method to convert strings to the constant class.
+            </summary>
+            <param name="value">The string value to convert to the constant class.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amazon.EBS.AmazonEBSClient">
+             <summary>
+             Implementation for accessing EBS
+            
+             You can use the Amazon Elastic Block Store (EBS) direct APIs to directly read the
+             data on your EBS snapshots, and identify the difference between two snapshots. You
+             can view the details of blocks in an EBS snapshot, compare the block difference between
+             two snapshots, and directly access the data in a snapshot. If you’re an independent
+             software vendor (ISV) who offers backup services for EBS, the EBS direct APIs make
+             it easier and more cost-effective to track incremental changes on your EBS volumes
+             via EBS snapshots. This can be done without having to create new volumes from EBS
+             snapshots.
+             
+              
+             <para>
+             This API reference provides detailed information about the actions, data types, parameters,
+             and errors of the EBS direct APIs. For more information about the elements that make
+             up the EBS direct APIs, and examples of how to use them effectively, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-accessing-snapshot.html">Accessing
+             the Contents of an EBS Snapshot</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.
+             For more information about the supported AWS Regions, endpoints, and service quotas
+             for the EBS direct APIs, see <a href="https://docs.aws.amazon.com/general/latest/gr/ebs-service.html">Amazon
+             Elastic Block Store Endpoints and Quotas</a> in the <i>AWS General Reference</i>.
+             </para>
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor">
+             <summary>
+             Constructs AmazonEBSClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(Amazon.RegionEndpoint)">
+             <summary>
+             Constructs AmazonEBSClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(Amazon.EBS.AmazonEBSConfig)">
+             <summary>
+             Constructs AmazonEBSClient with the credentials loaded from the application's
+             default configuration, and if unsuccessful from the Instance Profile service on an EC2 instance.
+             
+             Example App.config with credentials set. 
+             <code>
+             &lt;?xml version="1.0" encoding="utf-8" ?&gt;
+             &lt;configuration&gt;
+                 &lt;appSettings&gt;
+                     &lt;add key="AWSProfileName" value="AWS Default"/&gt;
+                 &lt;/appSettings&gt;
+             &lt;/configuration&gt;
+             </code>
+            
+             </summary>
+             <param name="config">The AmazonEBSClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(Amazon.Runtime.AWSCredentials)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Credentials
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(Amazon.Runtime.AWSCredentials,Amazon.EBS.AmazonEBSConfig)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Credentials and an
+            AmazonEBSClient Configuration object.
+            </summary>
+            <param name="credentials">AWS Credentials</param>
+            <param name="clientConfig">The AmazonEBSClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String,Amazon.EBS.AmazonEBSConfig)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonEBSClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="clientConfig">The AmazonEBSClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String,System.String,Amazon.RegionEndpoint)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID and AWS Secret Key
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="region">The region to connect.</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.#ctor(System.String,System.String,System.String,Amazon.EBS.AmazonEBSConfig)">
+            <summary>
+            Constructs AmazonEBSClient with AWS Access Key ID, AWS Secret Key and an
+            AmazonEBSClient Configuration object. 
+            </summary>
+            <param name="awsAccessKeyId">AWS Access Key ID</param>
+            <param name="awsSecretAccessKey">AWS Secret Access Key</param>
+            <param name="awsSessionToken">AWS Session Token</param>
+            <param name="clientConfig">The AmazonEBSClient Configuration Object</param>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.CreateSigner">
+            <summary>
+            Creates the signer for the service.
+            </summary>
+        </member>
+        <member name="P:Amazon.EBS.AmazonEBSClient.ServiceMetadata">
+            <summary>
+            Capture metadata for the service.
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.Dispose(System.Boolean)">
+            <summary>
+            Disposes the service client.
+            </summary>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.GetSnapshotBlockAsync(Amazon.EBS.Model.GetSnapshotBlockRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the data in a block in an Amazon Elastic Block Store snapshot.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetSnapshotBlock service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetSnapshotBlock service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/GetSnapshotBlock">REST API Reference for GetSnapshotBlock Operation</seealso>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.ListChangedBlocksAsync(Amazon.EBS.Model.ListChangedBlocksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the block indexes and block tokens for blocks that are different between two
+            Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangedBlocks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListChangedBlocks service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/ListChangedBlocks">REST API Reference for ListChangedBlocks Operation</seealso>
+        </member>
+        <member name="M:Amazon.EBS.AmazonEBSClient.ListSnapshotBlocksAsync(Amazon.EBS.Model.ListSnapshotBlocksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the block indexes and block tokens for blocks in an Amazon Elastic Block Store
+            snapshot.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListSnapshotBlocks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListSnapshotBlocks service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/ListSnapshotBlocks">REST API Reference for ListSnapshotBlocks Operation</seealso>
+        </member>
+        <member name="T:Amazon.EBS.IAmazonEBS">
+             <summary>
+             Interface for accessing EBS
+            
+             You can use the Amazon Elastic Block Store (EBS) direct APIs to directly read the
+             data on your EBS snapshots, and identify the difference between two snapshots. You
+             can view the details of blocks in an EBS snapshot, compare the block difference between
+             two snapshots, and directly access the data in a snapshot. If you’re an independent
+             software vendor (ISV) who offers backup services for EBS, the EBS direct APIs make
+             it easier and more cost-effective to track incremental changes on your EBS volumes
+             via EBS snapshots. This can be done without having to create new volumes from EBS
+             snapshots.
+             
+              
+             <para>
+             This API reference provides detailed information about the actions, data types, parameters,
+             and errors of the EBS direct APIs. For more information about the elements that make
+             up the EBS direct APIs, and examples of how to use them effectively, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-accessing-snapshot.html">Accessing
+             the Contents of an EBS Snapshot</a> in the <i>Amazon Elastic Compute Cloud User Guide</i>.
+             For more information about the supported AWS Regions, endpoints, and service quotas
+             for the EBS direct APIs, see <a href="https://docs.aws.amazon.com/general/latest/gr/ebs-service.html">Amazon
+             Elastic Block Store Endpoints and Quotas</a> in the <i>AWS General Reference</i>.
+             </para>
+             </summary>
+        </member>
+        <member name="M:Amazon.EBS.IAmazonEBS.GetSnapshotBlockAsync(Amazon.EBS.Model.GetSnapshotBlockRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the data in a block in an Amazon Elastic Block Store snapshot.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the GetSnapshotBlock service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the GetSnapshotBlock service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/GetSnapshotBlock">REST API Reference for GetSnapshotBlock Operation</seealso>
+        </member>
+        <member name="M:Amazon.EBS.IAmazonEBS.ListChangedBlocksAsync(Amazon.EBS.Model.ListChangedBlocksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the block indexes and block tokens for blocks that are different between two
+            Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListChangedBlocks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListChangedBlocks service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/ListChangedBlocks">REST API Reference for ListChangedBlocks Operation</seealso>
+        </member>
+        <member name="M:Amazon.EBS.IAmazonEBS.ListSnapshotBlocksAsync(Amazon.EBS.Model.ListSnapshotBlocksRequest,System.Threading.CancellationToken)">
+            <summary>
+            Returns the block indexes and block tokens for blocks in an Amazon Elastic Block Store
+            snapshot.
+            </summary>
+            <param name="request">Container for the necessary parameters to execute the ListSnapshotBlocks service method.</param>
+            <param name="cancellationToken">
+                A cancellation token that can be used by other objects or threads to receive notice of cancellation.
+            </param>
+            
+            <returns>The response from the ListSnapshotBlocks service method, as returned by EBS.</returns>
+            <exception cref="T:Amazon.EBS.Model.ResourceNotFoundException">
+            The specified resource does not exist.
+            </exception>
+            <exception cref="T:Amazon.EBS.Model.ValidationException">
+            The input fails to satisfy the constraints of the EBS direct APIs.
+            </exception>
+            <seealso href="http://docs.aws.amazon.com/goto/WebAPI/ebs-2019-11-02/ListSnapshotBlocks">REST API Reference for ListSnapshotBlocks Operation</seealso>
+        </member>
+    </members>
+</doc>
