@@ -48,6 +48,8 @@ public class OnboardingController : MonoBehaviour
         var newPos = (Camera.main.transform.forward * 5);
         newPos.y = Camera.main.transform.position.y;
         _closedSphere.transform.position = newPos;
+        _closedSphere.transform.LookAt(Camera.main.transform.position);
+        _openSphere.transform.rotation = _closedSphere.transform.rotation;
 
         _closedSphere.SetActive(true);
     }
