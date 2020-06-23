@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Video;
 
 public class OnboardingController : MonoBehaviour
 {
+    [SerializeField] GameObject _canvas;
     [SerializeField] OnboardingStep _progres;
     [SerializeField] AudioClip _stepCompleteClip;
 
@@ -19,8 +21,17 @@ public class OnboardingController : MonoBehaviour
     [SerializeField] GameObject _closedSphere;
     [SerializeField] GameObject _openSphere;
 
+    [SerializeField] UnityEvent _onOnboardingComplete;
+
     public void Start()
     {
+        var cameraTransform = Camera.main.transform;
+        var newPos = (cameraTransform.forward * 190f);
+        newPos.y = 0;
+        _canvas.transform.position= newPos;
+        _canvas.transform.LookAt(new Vector3(cameraTransform.position.x, 0, cameraTransform.position.z));
+        _canvas.transform.rotation *= Quaternion.AngleAxis(180, Vector3.up);
+
         ChangeClip(_teleportClip);
     }
 
@@ -33,6 +44,11 @@ public class OnboardingController : MonoBehaviour
         ChangeClip(_sphereSelect);
 
         _audioSource.PlayOneShot(_stepCompleteClip);
+
+        var newPos = (Camera.main.transform.forward * 5);
+        newPos.y = Camera.main.transform.position.y;
+        _closedSphere.transform.position = newPos;
+
         _closedSphere.SetActive(true);
     }
 
@@ -54,10 +70,13 @@ public class OnboardingController : MonoBehaviour
         if (_progres != OnboardingStep.RecordAudio)
             return;
 
-        _progres = OnboardingStep.MoveAudioBubble;
-        ChangeClip(_moveAudioBubble);
+        _progres = OnboardingStep.Completed;
+        //ChangeClip(_moveAudioBubble);
 
+
+        _audioSource.Stop();
         _audioSource.PlayOneShot(_stepCompleteClip);
+        Invoke(nameof(InvokeCompleted), 5f);
     }
 
     public void HandleAudioMoved()
@@ -70,6 +89,10 @@ public class OnboardingController : MonoBehaviour
 
         _audioSource.PlayOneShot(_stepCompleteClip);
     }
+
+    private void InvokeCompleted() => _onOnboardingComplete.Invoke();
+
+    // private void InvokeOneShot() => _audioSource.PlayOneShot(_stepCompleteClip);
 
     public void ChangeClip(VideoClip clip)
     {

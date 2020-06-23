@@ -46,7 +46,7 @@ public class ToolSelector : MonoBehaviour
             toolTransform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 0.3f, Camera.main.transform.position.z) + Camera.main.transform.forward * 1f;
             toolTransform.rotation = new Quaternion(0.0f, Camera.main.transform.rotation.y, 0.0f, Camera.main.transform.rotation.w);
             toolTransform.LookAt(cameraTransform);
-            toolTransform.rotation.Set(toolTransform.rotation.x, -toolTransform.rotation.y, toolTransform.rotation.z, toolTransform.rotation.w);
+            toolTransform.rotation *= Quaternion.AngleAxis(180, Vector3.up);
             tool.SetActive(true);
 
         }

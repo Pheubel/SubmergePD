@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Valve.VR.InteractionSystem;
 
 public class TransitionConroller : MonoBehaviour
 {
     public string NextScene => _nextScene;
     [SerializeField] private string _nextScene;
+
+    [SerializeField] Player _player;
 
     private Animator _animator;
 
@@ -25,6 +28,9 @@ public class TransitionConroller : MonoBehaviour
 
     public void OnFadeOutCompleted()
     {
+        if (_player != null)
+            Destroy(_player.gameObject);
+
         SceneManager.LoadScene(_nextScene);
     }
 

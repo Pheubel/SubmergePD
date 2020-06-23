@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class MicrophoneRecorder : MonoBehaviour
 {
-    FinishedRecordingEvent _clipRecorded = new FinishedRecordingEvent();
+    [SerializeField] FinishedRecordingEvent _clipRecorded = new FinishedRecordingEvent();
     [Tooltip("The time in seconds the microphone will record for.")]
     [SerializeField] int _recordingTime = 120;
     [Tooltip("The amound of samples recorded per second.")]
@@ -71,5 +72,6 @@ public class MicrophoneRecorder : MonoBehaviour
         }
     }
 
+    [Serializable]
     private class FinishedRecordingEvent :  UnityEvent<AudioClip>{}
 }
