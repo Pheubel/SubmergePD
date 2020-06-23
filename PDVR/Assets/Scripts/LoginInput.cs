@@ -7,24 +7,30 @@ public class LoginInput : MonoBehaviour
 {
     public TMP_Text m_TextComponent;
     public GameObject networkManager;
+
+    string input = string.Empty;
+
     public void EraseText()
     {
-        m_TextComponent.SetText("");
+        input = string.Empty;
+        m_TextComponent.SetText(input);
     }
     public void appendNumber(int number)
     {
-        if (m_TextComponent.text.Length < 5)
+        if (input.Length < 5)
         {
-            m_TextComponent.SetText(m_TextComponent.text + number);
+            input += number.ToString();
+
+            m_TextComponent.SetText(input);
         }
 
     }
 
     public void Login()
     {
-        if (m_TextComponent.text.Length ==5)
+        if (input.Length ==5)
         {
-            networkManager.GetComponent<NetworkManager>().Login(int.Parse(m_TextComponent.text));
+            networkManager.GetComponent<NetworkManager>().Login(int.Parse(input));
         }
     }
 }
