@@ -25,8 +25,8 @@ public class AudioToolController : MonoBehaviour
 
     private void OnDisable()
     {
-        _recordAction.AddOnStateUpListener(HandleRecordActionUp, _inputSource);
-        _recordAction.AddOnStateDownListener(HandleRecordActionDown, _inputSource);
+        _recordAction.RemoveOnStateUpListener(HandleRecordActionUp, _inputSource);
+        _recordAction.RemoveOnStateDownListener(HandleRecordActionDown, _inputSource);
 
         _recorder.RemoveRecordedListener(HandleClipRecorded);
     }

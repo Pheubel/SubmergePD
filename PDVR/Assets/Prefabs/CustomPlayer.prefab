@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initializeSteamVROnAwake: 1
-  doNotDestroy: 1
+  doNotDestroy: 0
   steamvr_render: {fileID: 0}
 --- !u!114 &4110006788380741097
 MonoBehaviour:
@@ -1873,6 +1873,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4848070986497930906, guid: 0c8c0e9162ed47c44b7613cfc98764fe,
+        type: 3}
+      propertyPath: _inputSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4848070986497930907, guid: 0c8c0e9162ed47c44b7613cfc98764fe,
         type: 3}
       propertyPath: m_Name
@@ -2259,6 +2264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848070986497930906, guid: 0c8c0e9162ed47c44b7613cfc98764fe,
+        type: 3}
+      propertyPath: _inputSource
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4848070986497930907, guid: 0c8c0e9162ed47c44b7613cfc98764fe,
         type: 3}
