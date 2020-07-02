@@ -10,13 +10,19 @@ using System.Collections.Generic;
 
 public class NetworkManager : MonoBehaviour
 {
+    public string ip = "//84.107.103.142:3000/";
     public TMP_Text welcomeMessage;
     public GameObject loginScreen;
     public GameObject hideThis;
     public GameObject imagePrefab;
     private LoadImages imageManager;
 
+    private void Start()
+    {
+        ip = "//"+System.Environment.GetCommandLineArgs()[0]+":3000/";
 
+
+    }
     IEnumerator GetRequest(string url, Action<UnityWebRequest> callback)
     {
         using (UnityWebRequest request = UnityWebRequest.Get(url))
@@ -40,7 +46,7 @@ public class NetworkManager : MonoBehaviour
 
     public void Login(int ID)
     {
-        StartCoroutine(GetRequest("//84.107.103.142:3000/officer?temp_id=eq." + ID, (UnityWebRequest req) =>
+        StartCoroutine(GetRequest(ip+"officer?temp_id=eq." + ID, (UnityWebRequest req) =>
           {
               if (req.isNetworkError || req.isHttpError)
               {
@@ -63,7 +69,7 @@ public class NetworkManager : MonoBehaviour
 
     public void loadWorkspace(string userId)
     {
-        StartCoroutine(GetRequest("//84.107.103.142:3000/image_cue?owner=eq." + userId, (UnityWebRequest req) =>
+        StartCoroutine(GetRequest(ip+"image_cue?owner=eq." + userId, (UnityWebRequest req) =>
           {
               if (req.isNetworkError || req.isHttpError)
               {
@@ -109,7 +115,7 @@ public class NetworkManager : MonoBehaviour
     public List<Officer> GetOfficers()
     {
         List<Officer> officerList = new List<Officer>();
-        StartCoroutine(GetRequest("//84.107.103.142:3000/officer", (UnityWebRequest req) =>
+        StartCoroutine(GetRequest(ip+"/officer", (UnityWebRequest req) =>
         {
             if (req.isNetworkError || req.isHttpError)
             {
@@ -136,7 +142,7 @@ public class NetworkManager : MonoBehaviour
 
             if (cue.id == 0)
         {
-            StartCoroutine(GetRequest("//84.107.103.142:3000/rpc/get_new_id_image", (UnityWebRequest req) =>
+            StartCoroutine(GetRequest(ip+"rpc/get_new_id_image", (UnityWebRequest req) =>
             {
 
                 if (req.isNetworkError || req.isHttpError)
@@ -154,7 +160,7 @@ public class NetworkManager : MonoBehaviour
                     Debug.Log("INTEGER IS " + body);
                     Debug.Log(json);
 
-                    StartCoroutine(PostRequest("//84.107.103.142:3000/image_cue", json));
+                    StartCoroutine(PostRequest(ip+"/image_cue", json));
                 }
 
 
@@ -165,7 +171,7 @@ public class NetworkManager : MonoBehaviour
             Debug.Log(ActiveUser.userID);
             Debug.Log(json);
 
-            StartCoroutine(PostRequest("//84.107.103.142:3000/image_cue", json));
+            StartCoroutine(PostRequest(ip+"/image_cue", json));
         }
 
 
